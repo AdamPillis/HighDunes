@@ -22,7 +22,7 @@ class Review(models.Model):
 
     class Meta:
         """To set reviews order based on 'created_on' date"""
-        ordering = ['created_on']
+        ordering = ['-created_on']
 
     def __str__(self):
         return self.title
