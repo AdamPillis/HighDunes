@@ -6,7 +6,7 @@ from .models import Review
 class ReviewList(generic.ListView):
     """
     Using django's built in generic view, this class
-    will list all the reviews using the imported 
+    will list all the reviews using the imported
     Review model through index.html and order it
     by the 'created_on date
     """
