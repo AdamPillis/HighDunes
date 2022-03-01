@@ -39,7 +39,7 @@
     position: relative;
     max-width: 100%;
     background-color: #343a40;
-    background: url("/static/images/masthead-landing-image.jpg") no-repeat center center;
+    background: url("/static/images/masthead-main-image.jpg") no-repeat center center;
     background-size: cover;
     margin: 25px auto;
     padding-top: 8rem;
@@ -61,6 +61,39 @@
     background-color: rgba(0, 0, 0, 0.6);
 }
 
+/* features with icons? */
+.features-icons {
+  padding-top: 3rem;
+  padding-bottom: 7rem;
+}
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+/* register link section */
+.box {
+  box-sizing: border-box;
+}
+.register-image {
+  position: relative;
+  max-width: 100%;
+  opacity: 0.9;
+  background-color: #343a40;
+  background: url("/static/images/register-section-image.jpg") no-repeat center center;
+  background-size: cover;
+  margin: 25px 0 auto auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.register-image .container-fluid {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+}
   /* Footer section */
 .display {
     display: flex;
