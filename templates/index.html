@@ -57,27 +57,75 @@
         <div class="row g-0">
             <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-2.jpg')"></div>
             <div class="col-lg-6 my-auto showcase-text">
-                <h2>Updated For Bootstrap 5</h2>
-                <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 5 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 5!</p>
+                <h2 class="text-center">Updated For Bootstrap 5</h2>
+                <p class="lead mb-0 mx-5">Newly improved, and full of great utility classes, Bootstrap 5 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 5!</p>
             </div>
         </div>
         <div class="row g-0">
             <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-3.jpg')"></div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                <h2>Easy to Use & Customize</h2>
-                <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+                <h2 class="text-center">Easy to Use & Customize</h2>
+                <p class="lead mb-0 mx-5">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
             </div>
         </div>
     </div>
 </section>
+<!-- Reviews and comments section for visitors to see -->
+<div class="container-fluid">
+    <div class="row">
+        <hr>
+        <h2 class="mt-3 text-center">Not convinced?</h2>
+        <h4 class="mt-3 text-center">Read some of our latest reviews from our valued site members!</h4>
 
-<!-- Masthead-->
+        <!-- Blog Entries Column -->
+        <div class="col-12 mt-3 left">
+            <div class="row">
+                {% for review in review_list %}
+                <div class="col-md-10 mx-auto">
+                    <div class="card mb-sm-4">
+                        <div class="card-body">
+                            <h2 class="card-title">{{ review.title }}</h2>
+                            <p class="author">Written by: {{ review.member }}</p>
+                            <br>
+                            <p class="card-text">{{ review.excerpt }}</p>
+                            <span><strong>Click to read more</strong></span>
+                            <hr />
+            
+                            <p class="card-text text-muted h6">{{ review.created_on}} <i class="far fa-heart"></i>
+                                {{ review.number_of_likes }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% if forloop.counter|divisibleby:3 %}
+            </div>
+            <div class="row">
+                {% endif %}
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+    {% if is_paginated %}
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            {% if page_obj.has_previous %}
+            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+            {% endif %}
+            {% if page_obj.has_next %}
+            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+
+            {% endif %}
+        </ul>
+    </nav>
+    {% endif %}
+</div>
+<!-- Register section above footer-->
 <section class="register-image">
     <div class="container-fluid col-lg-6 position-relative">
         <div class="row justify-content-center">
             <div class="col-xl-6 align-self-sm-center">
                 <div class="text-center">
-                    <!-- Page heading-->
+                    <!-- Darkend box to include clear content and button style-->
                     <h1 class="mb-5 text-white">Sign up now on our landing page!</h1>
 
                     <button class="btn btn-hover mx-auto">Click me</button>                 
