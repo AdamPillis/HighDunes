@@ -49,15 +49,21 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'django_summernote',
+    'crispy_forms',
     'feedback',
 ]
 
 # One site using one database so telling django site number is only one
 SITE_ID = 1
 
-# Add redirection templates so when logged in or out, site redirects to home page
+# Add redirection templates so when logged in or out, 
+# site redirects to home page
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+# Telling cripsy forms to use bootstrap 4 template pack 
+# through which classes will work the same
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
