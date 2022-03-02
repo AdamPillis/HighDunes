@@ -84,11 +84,14 @@
                 <div class="col-md-10 mx-auto">
                     <div class="card mb-sm-4">
                         <div class="card-body">
-                            <h2 class="card-title">{{ review.title }}</h2>
+                            <h3 class="card-title">{{ review.title }}</h3>
                             <p class="author">Written by: {{ review.member }}</p>
                             <br>
                             <p class="card-text">{{ review.excerpt }}</p>
-                            <span><strong>Click to read more</strong></span>
+                            <!-- link to view each review in full and comment below -->
+                            <a href="{% url 'review_page' review.slug %}" class="review-link">
+                                <strong>Click to read more</strong>
+                            </a>
                             <hr />
             
                             <p class="card-text text-muted h6">{{ review.created_on}} <i class="far fa-heart"></i>
