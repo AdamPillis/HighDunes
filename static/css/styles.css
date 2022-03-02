@@ -1,3 +1,7 @@
+hr {
+  width: 80%;
+  margin: 15px auto;
+}
 /* setting general button design */
 /* design idea from 'Animated CSS Buttons'  */
 .btn{
@@ -109,4 +113,47 @@
 
 i {
     font-size: 1.8rem;
+}
+
+/* Review_page styles */
+.review {
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  height: 45vh;
+  width: 100%;
+}
+
+.review-text {
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+.review-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.review-image:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 90%;
+  height: 100%;
+  width: 150%;
+  background: black;
+  -webkit-transform: skew(15deg);
+  -moz-transform: skew(15deg);
+  transform: skew(15deg);
+  z-index: 100;
+}
+.review-title {
+  margin-top: 15%;
+  margin-left: 5%;
+}
+.review-details {
+  margin-left: 5%;
+  margin-top: 15%;
 }
