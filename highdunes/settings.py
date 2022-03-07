@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     'feedback',
+    'user_profile',
 ]
 
 # One site using one database so telling django site number is only one
