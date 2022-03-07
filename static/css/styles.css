@@ -1,8 +1,25 @@
+/* setting font styles */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Gideon Roman', cursive;
 }
 p, button, a {
   font-family: 'Raleway', sans-serif;
+}
+/* setting background color */
+body {
+  background-color: rgba(244, 222, 144, 0.3);
+}
+nav .container-fluid{
+  background-color: rgba(244, 222, 144, 0.6);
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.navbar{
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+a {
+  color: white;
 }
 hr {
   width: 80%;
@@ -92,13 +109,26 @@ hr {
 }
 /* like button styling */
 .btn-like {
-  color: #E84610;
+  color: #46AB21;
   border: none;
   background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
+  color: #46AB21;
+  background: transparent;
+  border: none;
+}
+/* dislike button styling */
+.btn-dislike {
+  color: #E84610;
+  border: none;
+  background: transparent;
+}
+
+.btn-dislike:hover,
+.btn-dislike:active {
   color: #E84610;
   background: transparent;
   border: none;

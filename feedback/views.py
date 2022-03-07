@@ -28,6 +28,9 @@ class ReviewInDetail(View):
         liked = False
         if review.likes.filter(id=self.request.user.id).exists():
             liked = True
+        disliked = False
+        if review.dislikes.filter(id=self.request.user.id).exists():
+            disliked = True
 
         return render(
             request,
@@ -37,6 +40,7 @@ class ReviewInDetail(View):
                 "comments": comments,
                 "commented": False,
                 "liked": liked,
+                "disliked": disliked,
                 "comment_form": CommentForm()
             },
         )
@@ -49,6 +53,9 @@ class ReviewInDetail(View):
         liked = False
         if review.likes.filter(id=self.request.user.id).exists():
             liked = True
+        disliked = False
+        if review.dislikes.filter(id=self.request.user.id).exists():
+            disliked = True
         # variable to hold form data
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
@@ -67,7 +74,8 @@ class ReviewInDetail(View):
                 "comments": comments,
                 "commented": True,
                 "comment_form": comment_form,
-                "liked": liked
+                "liked": liked,
+                "disliked": disliked
             },
         )
 
@@ -88,5 +96,26 @@ class ReviewLike(View):
             review.likes.remove(request.user)
         else:
             review.likes.add(request.user)
+
+        return HttpResponseRedirect(reverse('review_page', args=[slug]))
+
+
+class ReviewDislike(View):
+    """
+    Form created to add and remove review dislikes by users
+    Returns updated review_page.html
+    """
+    def post(self, request, slug):
+        """
+        creating post form to add or delete a 'dislike' depending
+        on boolean status within review model.
+        Using django's built in http lib to redirect user.
+        """
+        review = get_object_or_404(Review, slug=slug)
+
+        if review.dislikes.filter(id=request.user.id).exists():
+            review.dislikes.remove(request.user)
+        else:
+            review.dislikes.add(request.user)
 
         return HttpResponseRedirect(reverse('review_page', args=[slug]))

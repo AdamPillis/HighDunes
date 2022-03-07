@@ -19,6 +19,7 @@ class Review(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=REVIEW_STATUS, default=0)
     likes = models.ManyToManyField(User, related_name='review_likes', blank=True)
+    dislikes = models.ManyToManyField(User, related_name='review_dislikes', blank=True)
 
     class Meta:
         """To set reviews order based on 'created_on' date"""
@@ -30,6 +31,10 @@ class Review(models.Model):
     def number_of_likes(self):
         """enable each review to gain unlimited likes"""
         return self.likes.count()
+    
+    def number_of_dislikes(self):
+        """enable each review to gain unlimited dislikes"""
+        return self.dislikes.count()
 
 
 class Comment(models.Model):

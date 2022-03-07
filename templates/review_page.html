@@ -37,18 +37,40 @@
                                 {% csrf_token %}
                                 {% if liked %}
                                 <button type="submit" name="review_id" value="{{review.slug}}" class="btn-like">
-                                    <i class="fas fa-heart"></i>
+                                    <i class="far fa-thumbs-up"></i>
                                 </button>
                                 {% else %}
                                 <button type="submit" name="review_id" value="{{review.slug}}" class="btn-like">
-                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-thumbs-up"></i>
                                 </button>
                                 {% endif %}
                             </form>
                             {% else %}
-                            <span class="text-secondary"><i class="far fa-heart"></i></span>
+                            <span class="text-secondary"><i class="far fa-thumbs-up"></i></span>
                             {% endif %}
                             <span class="text-secondary">{{ review.number_of_likes }}</span>
+                        </strong>
+                        
+                    </div>
+                    <div class="col-1">
+                        <strong>
+                            {% if user.is_authenticated %}
+                            <form class="d-line" action="{% url 'review_dislike' review.slug %}" method="POST">
+                                {% csrf_token %}
+                                {% if disliked %}
+                                <button type="submit" name="review_id" value="{{review.slug}}" class="btn-dislike">
+                                    <i class="far fa-thumbs-down"></i>
+                                </button>
+                                {% else %}
+                                <button type="submit" name="review_id" value="{{review.slug}}" class="btn-dislike">
+                                    <i class="far fa-thumbs-down"></i>
+                                </button>
+                                {% endif %}
+                            </form>
+                            {% else %}
+                            <span class="text-secondary"><i class="far fa-thumbs-down"></i></span>
+                            {% endif %}
+                            <span class="text-secondary">{{ review.number_of_dislikes }}</span>
                         </strong>
                         
                     </div>
