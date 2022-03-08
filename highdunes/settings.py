@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     'crispy_forms',
     'feedback',
     'user_profile',
+    'phonenumber_field',
+    'django_countries',
 ]
 
 # One site using one database so telling django site number is only one
