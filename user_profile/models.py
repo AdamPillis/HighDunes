@@ -14,8 +14,8 @@ class Profile(models.Model):
     logged in user
     """
     user = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
-    f_name = models.CharField(min_length=2, max_length=50)
-    l_name = models.CharField(min_length=2, max_length=50)
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
     email = models.EmailField()
     phone_number = PhoneNumberField()
     gender = models.IntegerField(choices=GENDER_STATUS, default=0)
@@ -23,3 +23,10 @@ class Profile(models.Model):
         validators=[MinValueValidator(16), MaxValueValidator(100)])
     country = CountryField()
     created_on = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        """To set profile orders based on 'created_on' date"""
+        ordering = ['-created_on']
+
+    def __str__(self):
+        return self.user.username
