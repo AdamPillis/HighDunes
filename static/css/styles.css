@@ -206,3 +206,11 @@ i {
   margin-left: 5%;
   margin-top: 15%;
 }
+/* view_profile.html */
+.profile-img {
+  /* min-height: 30rem; */
+  background-size: cover;
+  height: 33vh;
+  width: 100%;
+  background: no-repeat center center;
+}
