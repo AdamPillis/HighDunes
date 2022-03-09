@@ -10,34 +10,35 @@
 <h2>{{ user.profile.last_name}}</h2> -->
 <div class="container">
     <div class="row">
-        <div class="col-lg-10">
+        <div class=" col-md-12">
             <h1 class="text-center">Welcome to your profile <strong>{{ user.username }}</strong></h1>
             <h3 class="text-center">This is the information we have on file for you so far</h3>
         </div>
-        <div class="form-content">
-            <form method="post" enctype="multipart/form-data">
-                {% csrf_token %}
-                <div class="form-row">
-                    <div class="col-md-5">
-                        <div class="form-group">
-                            <label class="small mb-1">Username:</label>
-                                {{ user_form.username }}
-                            <label class="small mb-1">Email:</label>
-                                {{ user_form.email }}
-                        </div>
-                        <div class="form-group">
-                            <a href="#">Change Password</a>
-                            <hr>
-                            <label class="small mb-1">Change Avatar:</label>
-                            {{ profile_form.avatar }}
-                        </div>
-                        <label class="small mb-1">Bio:</label> {{ profile_form.bio }}
-                    </div>
-                </div>
-                <br><br>
-                <button type="submit" class="btn btn-dark btn-lg">Save Changes</button>
-                <button type="reset" class="btn btn-dark btn-lg">Reset</button>
-            </form>
+        <div class="card mx-auto" style="width: 80%;">
+            <div class="card-body">
+              <h3 class="card-title text-center">My Profile</h3>
+              <h6 class="card-subtitle mb-2 text-muted">My Personal Details</h6>
+              <span class="card-text">First Name: <strong>{{ user.profile.first_name}}</strong></span>
+              <br>
+              <span class="card-text">Last Name: <strong>{{ user.profile.last_name}}</strong></span>
+              <br>
+              <span class="card-text">Email: <strong>{{ user.profile.email}}</strong></span>
+              <br>
+              <span class="card-text">Phone Number: <strong>{{ user.profile.phone_number}}</strong></span>
+              <br>
+              <span class="card-text">Gender: <strong>{{ user.profile.gender}}</strong></span>
+              <br>
+              <span class="card-text">Age: <strong>{{ user.profile.age}}</strong></span>
+              <br>
+              <span class="card-text">Country: <strong>{{ user.profile.country}}</strong></span>
+              <br>
+            </div>
+            <span class="mx-auto mb-2"><a href="{% url 'user_update_profile' %}">
+                <button class="btn btn-hover">Update Profile</button>
+            </a></span>
+            
+          </div>
+                
         </div>
     </div>
     <div class="row">

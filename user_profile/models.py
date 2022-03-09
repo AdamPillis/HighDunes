@@ -4,7 +4,7 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 from phonenumber_field.modelfields import PhoneNumberField
 from django_countries.fields import CountryField
 
-GENDER_STATUS = ((0, "I Prefer Not To Say"), (1, "Male"), (2, "Femail"))
+GENDER_STATUS = ((0, "I Prefer Not To Say"), (1, "Male"), (2, "Female"))
 
 
 class Profile(models.Model):
