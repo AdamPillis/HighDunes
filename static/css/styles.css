@@ -214,3 +214,19 @@ i {
   width: 100%;
   background: no-repeat center center;
 }
+/* update_profile.html */
+.form-row {
+  width: 60%;
+  min-width: 275px;
+  margin: 0 auto;
+}
+.form-button {
+  margin: 1.5rem auto;
+}
+.form-img {
+  width: 60%;
+  min-width: 500px;
+  margin: 0 auto;
+  height: 29vh;
+  padding: 0;
+}
