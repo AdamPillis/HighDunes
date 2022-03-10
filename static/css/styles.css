@@ -214,6 +214,10 @@ i {
   width: 100%;
   background: no-repeat center center;
 }
+.profile-cards {
+  width: 40%;
+  margin: 0 auto;
+}
 /* update_profile.html */
 .form-row {
   width: 60%;

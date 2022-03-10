@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Create Booking{% endblock title %}
+{% load crispy_forms_tags %}
+{% block content%}
+<div class="container-fluid">
+    <h1>Hello there</h1>
+    
+    <div class="row">
+        <div class="col-md-6 form-row">
+            <form method="POST">
+                {% csrf_token %}
+                {{ b_form|crispy }}
+                <button class="btn btn-hover form-button" type="submit">Request Now</button>
+                
+            </form>
+        
+        </div>
+    </div>
+    <div class="row">
+    
+        <div class="col-md-12 form-img">
+            <img src="/static/images/update_profile.jpg" alt="Golf Dunes and hills" class="profile-img"> 
+        </div>
+    
+    </div>
+</div>
+
+            
+{% endblock%} 

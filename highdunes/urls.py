@@ -22,4 +22,5 @@ urlpatterns = [
     path('', include('feedback.urls'), name='feedback_urls'),
     path('accounts/', include('allauth.urls')),
     path('user_profile/', include('user_profile.urls')),
+    path('golf_booking/', include('golf_booking.urls')),
 ]

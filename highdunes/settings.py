@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'user_profile',
     'phonenumber_field',
     'django_countries',
+    'golf_booking',
 ]
 
 # One site using one database so telling django site number is only one
