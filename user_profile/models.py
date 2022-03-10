@@ -20,7 +20,7 @@ class Profile(models.Model):
     phone_number = PhoneNumberField()
     gender = models.IntegerField(choices=GENDER_STATUS, default=0)
     age = models.IntegerField(
-        validators=[MinValueValidator(16), MaxValueValidator(100)])
+        validators=[MinValueValidator(16), MaxValueValidator(100)], default=16)
     country = CountryField()
     created_on = models.DateTimeField(auto_now_add=True)
 
