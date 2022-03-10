@@ -3,5 +3,5 @@ from .views import bookings
 
 
 urlpatterns = [
-    path('profile/', bookings, name='view-bookings'),
+    path('bookings/', bookings, name='view-bookings')
 ]

@@ -10,4 +10,4 @@ def bookings(request):
     context = {
         'bookings': Booking.objects.filter(booking_id=request.user).values()
     }
-    return render(request, 'view_profile', context)
+    return render(request, 'view_bookings.html', context)
