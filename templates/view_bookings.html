@@ -52,6 +52,13 @@
                                   <strong>{{ booking.extra_requests }}</strong></p> 
                             
                             <hr />
+                            <a href="/edit/{{ item.id }}" class="text-decoration-none">
+                                <button class="booking-btn btn-primary">Update</button>
+                            </a>
+                            
+                            <a href="/edit/{{ item.id }}" class="text-decoration-none">
+                                <button class="booking-btn btn-danger">Delete</button>
+                            </a>
                             <!-- to display number of likes on each review -->
                             <p class="card-text text-muted h6">
                                 Created on: {{ booking.created_on}} |  By: {{ booking.last_name}}, {{ booking.first_name}}
@@ -69,29 +76,6 @@
                 {% endfor %}
             </div>
         </div>
-        <!-- <div class="card mx-auto" style="width: 60%;">
-            <div class=" col-md-12">
-                <h2 class="text-center">Bookings for:<strong>{{ user.username }}</strong></h2>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title text-center">My Bookings</h3>
-              <h6 class="card-subtitle mb-2 text-muted">Booking Details</h6>
-              <span class="card-text">First Name: <strong>{{ user.profile.first_name}}</strong></span>
-              <br>
-              <span class="card-text">Last Name: <strong>{{ user.profile.last_name}}</strong></span>
-              <br>
-              <span class="card-text">Email: <strong>{{ user.profile.email}}</strong></span>
-              <br>
-              <span class="card-text">Phone Number: <strong>{{ user.profile.phone_number}}</strong></span>
-              <br>
-              <span class="card-text">Phone Number: <strong>{{ booking.number_of_holes }}</strong></span>
-            <span class="mx-auto mb-2"><a href="#">
-                <button class="btn btn-hover">Update Profile</button>
-            </a></span>
-            
-          </div>
-                
-        </div> -->
         
     </div>
     <div class="row">

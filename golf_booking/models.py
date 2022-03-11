@@ -4,7 +4,7 @@ from phonenumber_field.modelfields import PhoneNumberField
 
 NUMBER_OF_HOLES = ((9, "9"), (18, "18"))
 NUMBER_OF_PLAYERS = ((1, "1"), (2, "2"), (3, "3"), (4, "4"))
-TEE_TIMES = ((8, "8:00"), (9, "9:00"), (10, "10:00"), (11, "11:00"), (12, "12:00"), (1, "13:00"), (2, "14:00"), (3, "15:00"), (4, "16:00"), (5, "17:00"))
+TEE_TIMES = (("8:00", "8:00"), ("9:00", "9:00"), ("10:00", "10:00"), ("11:00", "11:00"), ("12:00", "12:00"), ("13:00", "13:00"), ("14:00", "14:00"), ("15:00", "15:00"), ("16:00", "16:00"), ("17:00", "17:00"))
 BOOKING_STATUS = ((0, "Pending"), (1, "Confirmed"))
 
 
@@ -23,7 +23,7 @@ class Booking(models.Model):
     booking_status = models.IntegerField(choices=BOOKING_STATUS, default=0)
     club_hire = models.BooleanField(null=False, blank=False, default=False)
     play_date = models.DateField(null=True)
-    play_time = models.IntegerField(choices=TEE_TIMES, default=False)
+    play_time = models.CharField(choices=TEE_TIMES, default=False, max_length=10)
     extra_requests = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
 
