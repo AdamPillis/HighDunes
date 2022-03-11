@@ -234,3 +234,12 @@ i {
   height: 29vh;
   padding: 0;
 }
+/* view_bookings.html styling */
+.booking-img {
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+  height: 25vh;
+  display: inline-block;
+  width: 100%;
+}
