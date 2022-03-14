@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Delete Booking{% endblock title %}
+
+{% block content%}
+<div class="container-fluid">
+    
+    <div class="exit">
+
+        <p class="exit-text">Are you sure you want to delete "{{ booking }}"?</p>
+        
+        
+            <div class="exit-buttons">
+                <form action="{% url 'delete-booking' booking.id %}" method="POST">
+                    {% csrf_token %}
+                    <input type="submit" name="Confirm">
+
+                    <a href="{% url 'view-bookings' %}">
+                    <button class="exit-button" id="button-no" aria-label="click to return to game">Cancel</button>
+                    </a>
+                </form>
+            </div>
+        
+    </div>
+</div>
+
+            
+{% endblock%} 

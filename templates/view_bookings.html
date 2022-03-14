@@ -56,7 +56,7 @@
                                 <button class="booking-btn btn-primary">Update</button>
                             </a>
                             
-                            <a href="/edit/{{ item.id }}" class="text-decoration-none">
+                            <a href="{% url 'delete-booking' booking.id %}" class="text-decoration-none">
                                 <button class="booking-btn btn-danger">Delete</button>
                             </a>
                             <!-- to display number of likes on each review -->

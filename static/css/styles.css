@@ -249,3 +249,32 @@ i {
     width: 10%;
     margin: 10px auto;
 }
+/* delete_booking.html styling */
+.exit {
+  height: 30vh;
+  width: 40%;
+  background-color: hsl(43, 74%, 66%);
+  margin-top: 150px;
+  border-radius: 15px;
+}
+.exit-text{
+  font-size: 1.8rem;
+}
+.exit-buttons{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  margin: 40px auto;
+}
+.exit-button{
+  padding: 1%;
+  margin: 0 auto;
+  width: 40%;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+.exit-button:hover {
+  background-color: hsl(197, 37%, 24%);
+  color: white;
+  border: 1px solid white;
+}
