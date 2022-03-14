@@ -21,9 +21,11 @@ def update_profile(request):
             instance=request.user.profile)
         if p_form.is_valid():
             p_form.save()
-            messages.add_message(request, messages.SUCCESS, 'Your profile has been updated successfully.')
-            return redirect('user_profile')
-        
+            messages.add_message(
+                request, messages.SUCCESS, 
+                'Your profile has been updated successfully.'
+                )
+            return redirect('user_profile')    
     else:
         p_form = ProfileUpdateForm(instance=request.user.profile)
 

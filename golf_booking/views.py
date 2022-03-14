@@ -26,6 +26,7 @@ def add_booking(request):
             booking = add_form.save()
             booking.booking_id = request.user
             booking.save()
+            messages.add_message(request, messages.SUCCESS, 'Your booking has been created and is now waiting for approval.')
             return redirect('view-bookings')
     else:
         add_form = BookingForm()
@@ -43,7 +44,8 @@ def edit_booking(request, pk_id):
     if request.method == 'POST':
         add_form = BookingForm(request.POST, instance=booking)
         if add_form.is_valid():
-            add_form.save()        
+            add_form.save()
+            messages.add_message(request, messages.SUCCESS, 'Your booking has been received and is now waiting for approval.')        
             return redirect('view-bookings')
     
     context = {
@@ -57,6 +59,7 @@ def delete_booking(request, pk_id):
     booking = get_object_or_404(Booking, id=pk_id)
     if request.method == "POST":
         booking.delete()
+        messages.add_message(request, messages.SUCCESS, 'Your booking has been deleted.')
         return redirect('view-bookings')
     context = {
         'booking': booking

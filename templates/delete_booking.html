@@ -13,11 +13,11 @@
                 <form action="{% url 'delete-booking' booking.id %}" method="POST">
                     {% csrf_token %}
                     <input type="submit" name="Confirm">
-
-                    <a href="{% url 'view-bookings' %}">
-                    <button class="exit-button" aria-label="click to cancel delete request">Cancel</button>
-                    </a>
                 </form>
+                
+                    <a class="text-decoration-none" href="{% url 'view-bookings' %}">
+                        <button class="btn btn-hover mx-auto mt-5 mb-5">Cancel</button>
+                    </a>
             </div>
         
     </div>

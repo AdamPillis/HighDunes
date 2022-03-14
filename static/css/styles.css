@@ -272,3 +272,13 @@ i {
   color: white;
   border: 1px solid white;
 }
+/* login.html page styling */
+.login-div {
+  margin-top: 2vh;
+}
+.account-img {
+  width: 80%;
+  min-width: 500px;
+  margin: 0 auto;
+  padding: 0;
+}
