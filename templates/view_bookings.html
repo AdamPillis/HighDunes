@@ -52,7 +52,7 @@
                                   <strong>{{ booking.extra_requests }}</strong></p> 
                             
                             <hr />
-                            <a href="/edit/{{ item.id }}" class="text-decoration-none">
+                            <a href="{% url 'edit-booking' booking.id %}" class="text-decoration-none">
                                 <button class="booking-btn btn-primary">Update</button>
                             </a>
                             
@@ -63,13 +63,7 @@
                             <p class="card-text text-muted h6">
                                 Created on: {{ booking.created_on}} |  By: {{ booking.last_name}}, {{ booking.first_name}}
                             </p>
-                            <p class="card-text text-muted h6 mt-3"> 
-                                 <i class="far fa-thumbs-up btn-like"></i>
-                                {{ review.number_of_likes }}
                             
-                            <!-- to display number of dislikes on each review -->
-                             <i class="far fa-thumbs-down btn-dislike"></i>
-                                {{ review.number_of_dislikes }}</p>
                         </div>
                     </div>
                 </div>

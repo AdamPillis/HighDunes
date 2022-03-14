@@ -33,3 +33,20 @@ def add_booking(request):
             'add_form': add_form
     }
     return render(request, 'add_booking.html', context)
+
+
+def edit_booking(request, pk_id):
+    """X"""
+    booking = get_object_or_404(Booking, id=pk_id)
+    add_form = BookingForm(instance=booking)
+
+    if request.method == 'POST':
+        add_form = BookingForm(request.POST, instance=booking)
+        if add_form.is_valid():
+            add_form.save()        
+            return redirect('view-bookings')
+    
+    context = {
+            'add_form': add_form
+    }
+    return render(request, 'add_booking.html', context)
