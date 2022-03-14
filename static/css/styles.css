@@ -239,15 +239,9 @@ i {
   margin-top: 10px;
   overflow: hidden;
   position: relative;
-  height: 25vh;
+  max-height: 30vh;
   display: inline-block;
   width: 100%;
-}
-.booking-btn {
-    position: flex;
-    justify-content: center;
-    width: 10%;
-    margin: 10px auto;
 }
 /* delete_booking.html styling */
 .exit {
@@ -261,7 +255,7 @@ i {
   font-size: 1.8rem;
 }
 .exit-buttons{
-  width: 60%;
+  width: 30%;
   display: flex;
   flex-direction: row;
   margin: 40px auto;

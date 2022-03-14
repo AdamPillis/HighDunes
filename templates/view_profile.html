@@ -1,46 +1,48 @@
 {% extends "base.html" %}
 {% block title %}Profile Page{% endblock title %}
 {% block content%}
-<!-- <h1>
-    This is my profile page
-</h1>
-<div class="row my-3 p-3">
-    <h1>This is the profile page for {{user.username}}</h1>
-</div>
-<h2>{{ user.profile.last_name}}</h2> -->
-<div class="container">
-    <div class="row">
-        <div class="card mx-auto" style="width: 60%;">
-            <div class=" col-md-12">
-                <h1 class="text-center">Welcome to your profile <strong>{{ user.username }}</strong></h1>
-                <h3 class="text-center">This is the information we have on file for you so far</h3>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title text-center">My Profile</h3>
-              <h6 class="card-subtitle mb-2 text-muted">My Personal Details</h6>
-              <span class="card-text">First Name: <strong>{{ user.profile.first_name}}</strong></span>
-              <br>
-              <span class="card-text">Last Name: <strong>{{ user.profile.last_name}}</strong></span>
-              <br>
-              <span class="card-text">Email: <strong>{{ user.profile.email}}</strong></span>
-              <br>
-              <span class="card-text">Phone Number: <strong>{{ user.profile.phone_number}}</strong></span>
-              <br>
-              <span class="card-text">Gender: <strong>{{ user.profile.gender}}</strong></span>
-              <br>
-              <span class="card-text">Age: <strong>{{ user.profile.age}}</strong></span>
-              <br>
-              <span class="card-text">Country: <strong>{{ user.profile.country}}</strong></span>
-              <br>
-            </div>
-            <span class="mx-auto mb-2"><a href="{% url 'user_update_profile' %}">
-                <button class="btn btn-hover">Update Profile</button>
-            </a></span>
-            
-          </div>
-                
+<div class="container-fluid">
+    <!-- User Profile Page -->
+    <div class="col-12 mt-3 mx-auto">
+        <div class="row">          
+            <div class="col-md-10 mx-auto">
+                <div class="card mb-sm-4">
+                    <div class="card-body">                           
+                        <h3 class="card-title text-center"><strong>My Profile</strong></h3>
+                        <hr>
+                        {% if user.profile.first_name == "" %}
+                        <h2 class="text-center">You don't have a profile set up yet</h2>
+                        <div class="mx-auto mb-2"><a class="text-decoration-none" href="{% url 'user_update_profile' %}">
+                            <button>Create Profile</button>
+                        </a></div>
+                        {% else %}
+                        <h5>My Personal Details</h5>
+                        <br>
+                        <p class="card-text"> First Name : <strong>{{ user.profile.first_name}}</strong></p>
+                        <p class="card-text"> Last Name : <strong>{{ user.profile.last_name}}</strong></p>
+                        <p class="card-text">Email : <strong>{{ user.profile.email}}</strong></p>
+                        <p class="card-text">Contact No : <strong>{{ user.profile.phone_number}}</strong></p>
+                        <p class="card-text">Gender : <strong>{{ user.profile.gender}}</strong></p>
+                        <p class="card-text">Age : <strong>{{ user.profile.age}}</strong></p>
+                        <p class="card-text">Country Code : <strong>{{ user.profile.country}}</strong></p>
+                            
+                        <hr />
+                        
+                        <!-- to display number of likes on each review -->
+                        <p class="card-text text-muted h6">
+                            Created on: {{ user.profile.created_on}}
+                        </p>
+                        {% endif %}
+                            
+                    </div>
+                </div>
+                <a class="text-decoration-none" href="{% url 'user_update_profile' %}">
+                    <button class="btn btn-hover mx-auto mt-5 mb-5">Update Profile</button>
+                </a>
+            </div>          
         </div>
-    </div>
+    </div>       
+</div>
     <div class="row">
     
             <div class="col-lg-12 profile-img" style="background-image: url('/static/images/profile-img.jpg')"></div>
