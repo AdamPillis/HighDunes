@@ -8,8 +8,9 @@
             <form method="POST">
                 {% csrf_token %}
                 {{ p_form|crispy }}
+                <div class="center">
                 <button class="btn btn-hover form-button" type="submit">Update</button>
-                
+                </div>
             </form>
         
         </div>

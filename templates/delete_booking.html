@@ -14,8 +14,10 @@
         <div class="col-md-6 mt-3 offset-md-2">       
             <form action="{% url 'delete-booking' booking.id %}" method="POST">
                 {% csrf_token %}
-                <input type="submit" name="Confirm">
-                <a class="text-decoration-none btn-primary p-1 ms-5" href="{% url 'view-bookings' %}">
+                <button class="btn btn-hover" type="submit" name="Confirm">Submit
+                <!-- <input type="submit" name="Confirm"> -->
+            </button>
+                <a class="text-decoration-none btn btn-hover ms-2" href="{% url 'view-bookings' %}">
                     Cancel
                 </a>
             </form>

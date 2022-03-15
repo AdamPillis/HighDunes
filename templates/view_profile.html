@@ -39,9 +39,11 @@
                     <button class="btn btn-hover mx-auto mt-5 mb-5">Create Profile</button>
                 </a>
                 {% else %}
-                <a class="text-decoration-none" href="{% url 'user_update_profile' %}">
-                    <button class="btn btn-hover mx-auto mt-5 mb-5">Update Profile</button>
-                </a>
+                <div class="text-center">
+                    <a class="text-decoration-none btn btn-hover mx-auto mt-5 mb-5" href="{% url 'user_update_profile' %}">
+                        Update Profile
+                    </a>
+                </div>
                 {% endif %}
             </div>          
         </div>

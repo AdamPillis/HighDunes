@@ -47,7 +47,7 @@ def edit_booking(request, pk_id):
             add_form.save()
             messages.add_message(request, messages.SUCCESS, 'Your booking has been received and is now waiting for approval.')        
             return redirect('view-bookings')
-    
+
     context = {
             'add_form': add_form
     }

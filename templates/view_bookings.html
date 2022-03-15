@@ -5,10 +5,11 @@
 {% if user.profile.first_name == "" %}
 
 <h2 class="text-center mt-5 mb-5">You need to set up your profile before proceeding with a new booking</h2>
-
-<a class="text-decoration-none" href="{% url 'user_update_profile' %}">
-    <button class="btn btn-hover mx-auto mt-5 mb-5">Create Profile</button>
-</a>
+<div class="text-center">
+    <a class="text-decoration-none" href="{% url 'user_update_profile' %}">
+        <button class="btn btn-hover mx-auto mt-5 mb-5">Create Profile</button>
+    </a>
+</div>
 {% else %}
 <div class="booking-img">
     <div class="container">
@@ -26,9 +27,11 @@
         </div>
     </div>
 </div>
-<a class="text-decoration-none" href="{% url 'add-booking' %}">
-    <button class="btn btn-hover mx-auto">New Booking</button>
-</a>
+<div class="text-center">
+    <a class="text-decoration-none" href="{% url 'add-booking' %}">
+        <button class="btn btn-hover mx-auto">New Booking</button>
+    </a>
+</div>
 <div class="container-fluid">
         <!-- User Bookings List -->
         <div class="col-12 mt-3 left">
