@@ -12,9 +12,7 @@
                         <hr>
                         {% if user.profile.first_name == "" %}
                         <h2 class="text-center">You don't have a profile set up yet</h2>
-                        <div class="mx-auto mb-2"><a class="text-decoration-none" href="{% url 'user_update_profile' %}">
-                            <button>Create Profile</button>
-                        </a></div>
+                        
                         {% else %}
                         <h5>My Personal Details</h5>
                         <br>
@@ -36,9 +34,15 @@
                             
                     </div>
                 </div>
+                {% if user.profile.first_name == "" %}
+                <a class="text-decoration-none" href="{% url 'user_update_profile' %}">
+                    <button class="btn btn-hover mx-auto mt-5 mb-5">Create Profile</button>
+                </a>
+                {% else %}
                 <a class="text-decoration-none" href="{% url 'user_update_profile' %}">
                     <button class="btn btn-hover mx-auto mt-5 mb-5">Update Profile</button>
                 </a>
+                {% endif %}
             </div>          
         </div>
     </div>       

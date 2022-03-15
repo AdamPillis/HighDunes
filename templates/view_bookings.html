@@ -26,7 +26,6 @@
         </div>
     </div>
 </div>
-
 <a class="text-decoration-none" href="{% url 'add-booking' %}">
     <button class="btn btn-hover mx-auto">New Booking</button>
 </a>
@@ -35,6 +34,7 @@
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for booking in bookings %}
+                    
                 <div class="col-md-10 mx-auto">
                     <div class="card mb-sm-4">
                         <div class="card-body">
