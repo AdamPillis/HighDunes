@@ -70,32 +70,66 @@
 <section class="showcase mx-auto">
     <div class="container-fluid p-0">
         <div class="row g-0">
-            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg')"></div>
+            <div class="col-lg-6 order-lg-2">
+                <img class="showcase-img" src="/static/images/showcase-1-driving-range.jpg" alt="Driving Range">
+            </div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                <h2 class="text-center">Fully Responsive Design</h2>
-                <p class="lead mb-0 mx-5">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+                <h2 class="text-center p-2 mt-4 mx-3">
+                    Refurnished Driving Range five minutes from the first tee box!
+                </h2>
+                <p class="lead mb-0 mx-3 p-1 text-center">
+                    The long break over COVID19 has given our team and grass plenty of time 
+                    to restructure our range to fit more golfers and give you a more enhanced range!
+                    <br>
+                    Make sure to arrive early to try it out yourself, free of charge!
+                </p>
             </div>
         </div>
+        <hr class="mb-5 mt-5">
         <div class="row g-0">
-            <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-2.jpg')"></div>
+            <div class="col-lg-6 text-white showcase-img">
+                <img class="showcase-img" src="/static/images/showcase-2-twilight.jpg" alt="Golf flag during sunset">
+            </div>
             <div class="col-lg-6 my-auto showcase-text">
-                <h2 class="text-center">Updated For Bootstrap 5</h2>
-                <p class="lead mb-0 mx-5">Newly improved, and full of great utility classes, Bootstrap 5 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 5!</p>
+                <h2 class="text-center p-2 mt-4 mx-3">
+                    Our twilight offers begin soon and will not end any time soon!
+                </h2>
+                <p class="lead mb-0 mx-3 p-1 text-center">
+                    Once the clocks change at the end of March, our twilight rate with a 
+                    25% discount kicks in for tee times booked after 4:00PM with 15 minutes between
+                    tee times to ensure you get the most out of your time!
+                    <br>
+                    Have you ever enjoyed a breathtaking, Irish sunset surrounded by sand dunes?
+                    If not, we highly recommend it!
+                </p>
             </div>
         </div>
+        <hr class="mb-5 mt-5">
         <div class="row g-0">
-            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-3.jpg')"></div>
+            <div class="col-lg-6 order-lg-2">
+                <img class="showcase-img" src="/static/images/showcase-3-course-structure.jpeg" alt="Driving Range">
+            </div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                <h2 class="text-center">Easy to Use & Customize</h2>
-                <p class="lead mb-0 mx-5">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+                <h2 class="text-center p-2 mt-4 mx-3">
+                    Greg Norman Style Course
+                </h2>
+                <p class="lead mb-0 mx-3 p-1 text-center">
+                    As our golf club name suggests, we do offer you an exciting game 
+                    with our sand dunes, bunkers and uneven ground.
+                    <br>
+                    8 of our 18 holes guarantee lakeview while most of our Par 5s exceed 550 yards
+                    to allow you to show off your driving skills.
+                    Course maps will be provided when you check in with our golf assistants!
+                </p>
             </div>
         </div>
+
     </div>
 </section>
 <!-- Reviews and comments section for visitors to see -->
 <div class="container-fluid">
     <div class="row">
-        <hr>
+        <hr class="mb-5 mt-5">
         <h2 class="mt-3 text-center">Not convinced?</h2>
         <h4 class="mt-3 text-center">Read some of our latest reviews from our valued site members!</h4>
 
@@ -159,9 +193,12 @@
             <div class="col-xl-6 align-self-sm-center">
                 <div class="text-center">
                     <!-- Darkend box to include clear content and button style-->
-                    <h1 class="mb-5 text-white">Sign up now on our landing page!</h1>
+                    <h3 class="mb-3 mt-3 text-white">
+                        Our golf club is only at the start of its long, exciting journey. Are you ready to
+                        become one of our prime members and join us on this journey?
+                    </h3>
                     
-                    <a class="btn btn-hover mx-auto text-decoration-none" href="{% url 'account_signup' %}">Click me</a>                 
+                    <a class="btn btn-hover mx-auto text-white text-decoration-none" href="{% url 'account_signup' %}">Sign Up</a>                 
                 </div>
             </div>
         </div>
