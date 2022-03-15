@@ -5,11 +5,14 @@
 <header class="masthead">
     <div class="container-fluid col-lg-6 position-relative">
         <div class="row justify-content-center">
-            <div class="col-xl-6">
+            <div class="col-md-8 align-self-sm-center">
                 <div class="text-center">
-                    <!-- Page heading-->
-                    <h1 class="mb-5 text-white">Generate more leads with a professional landing page!</h1>
+                    <!-- Darkend box to include clear content and button style-->
+                    <h1 class="mb-2 p-2 text-white">Welcome Golfers!</h1>
+                    <h2 class="mb-2 p-2 text-white">Easter rates are now available at €50.00 PP until 30th of April. Sign In above to request a tee time</h2>
+                    <h4 class="p-2 text-white">Not a member with our site, sign up below in less than 2 minutes!</h4>
                     
+                    <a class="btn btn-hover mx-auto text-decoration-none text-white" href="{% url 'account_signup' %}">Sign Up</a>                 
                 </div>
             </div>
         </div>
@@ -28,14 +31,14 @@
             </div>
             <div class="col-lg-4">
                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                    <div class="features-icons-icon d-flex"><i class="fas fa-golf-ball m-auto text-primary"></i></i></div>
+                    <div class="features-icons-icon d-flex"><i class="fas fa-golf-ball m-auto text-primary"></i></div>
                     <h3>Bootstrap 5 Ready</h3>
                     <p class="lead mb-0">Featuring the latest build of the new Bootstrap 5 framework! <i class="fal fa-water"></i></p>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                    <div class="features-icons-icon d-flex"><i class="bi-terminal m-auto text-primary"></i></div>
+                    <div class="features-icons-icon d-flex"><i class="fas fa-water m-auto text-primary"></i></div>
                     <h3>Easy to Use</h3>
                     <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
                 </div>
@@ -138,8 +141,8 @@
                 <div class="text-center">
                     <!-- Darkend box to include clear content and button style-->
                     <h1 class="mb-5 text-white">Sign up now on our landing page!</h1>
-
-                    <button class="btn btn-hover mx-auto">Click me</button>                 
+                    
+                    <a class="btn btn-hover mx-auto text-decoration-none" href="{% url 'account_signup' %}">Click me</a>                 
                 </div>
             </div>
         </div>

@@ -10,13 +10,22 @@ body {
   background-color: rgba(244, 222, 144, 0.3);
 }
 nav .container-fluid{
-  background-color: rgba(244, 222, 144, 0.6);
+  background-color: rgba(244, 222, 144, 0.8);
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
 }
 .navbar{
   padding-top: 0rem;
   padding-bottom: 0rem;
+}
+.navbar .navbar-brand i {
+  color: #46AB21;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #265815;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
 }
 a {
   color: white;
@@ -29,7 +38,7 @@ hr {
 /* design idea from 'Animated CSS Buttons'  */
 .btn{
     position: relative;
-    display: block;
+    
     color: black;
     font-size: 14px;
     /* font-family: "montserrat"; */
