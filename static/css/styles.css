@@ -104,12 +104,14 @@ hr {
 }
 .features-icons .features-icons-item {
   max-width: 20rem;
+  align-items: center;
+  justify-content: center;
 }
-.features-icons .features-icons-item .features-icons-icon {
-  height: 7rem;
-}
-.features-icons .features-icons-item .features-icons-icon i {
-  font-size: 4.5rem;
+.features-icons .features-icons-item .features-icons-icon img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 5vh;
 }
 /* review section */
 .review-link {
