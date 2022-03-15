@@ -275,6 +275,7 @@ i {
 /* login.html page styling */
 .login-div {
   margin-top: 2vh;
+  height: 50vh;
 }
 .account-img {
   width: 80%;
