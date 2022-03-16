@@ -64,7 +64,9 @@ def edit_booking(request, pk_id):
     if request.method == 'POST':
         add_form = BookingForm(request.POST, instance=booking)
         if add_form.is_valid():
-            add_form.save()
+            booking = add_form.save()
+            booking.booking_status = 0
+            booking.save()
             messages.add_message(
                 request,
                 messages.SUCCESS,
