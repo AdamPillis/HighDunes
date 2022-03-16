@@ -2,6 +2,7 @@
 {% block title %}Update Profile{% endblock title %}
 {% load crispy_forms_tags %}
 {% block content%}
+{% load static %}
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-10 form-row">
@@ -19,7 +20,7 @@
     <!-- image displayed below form -->
     <div class="row">   
         <div class="col-md-12 form-img">
-            <img src="/static/images/update_profile.jpg" alt="Golf Dunes and hills" class="profile-img"> 
+            <img src="{% static 'images/update_profile.jpg' %}" alt="Golf Dunes and hills" class="profile-img"> 
         </div>    
     </div>
 </div>

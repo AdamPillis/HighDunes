@@ -2,6 +2,7 @@
 {% block title %}Create Booking{% endblock title %}
 {% load crispy_forms_tags %}
 {% block content%}
+{% load static %}
 <div class="container-fluid">
     <!-- includes BookingForm which is validated and then
     stored within the Booking model database 
@@ -21,7 +22,7 @@
     <div class="row">
         <!-- photo used at the bottom of add_booking.html is the same as update_profile.html -->
         <div class="col-md-12 form-img">
-            <img src="/static/images/update_profile.jpg" alt="Golf Dunes and hills" class="profile-img"> 
+            <img src="{% static 'images/update_profile.jpg' %}" alt="Golf Dunes and hills" class="profile-img"> 
         </div>
     
     </div>

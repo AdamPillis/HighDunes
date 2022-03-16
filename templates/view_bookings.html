@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block title %}View Bookings{% endblock title %}
 {% block content%}
+{% load static %}
 
 {% if user.profile.first_name == "" %}
 
@@ -21,7 +22,7 @@
             </div>
             <div class="d-none d-md-block col-md-6 review-image">
 
-                <img src="/static/images/review-page-image.jpg" width="100%">
+                <img src="{% static 'images/review-page-image.jpg' %}" width="100%">
                 
             </div>
         </div>
@@ -93,7 +94,7 @@
     <div class="row">
             <!-- image of golf ball above footer and under all user bookings -->
             <div class="col-lg-12 profile-img">
-                <img src="/static/images/profile-img.jpg" alt="Golf Dunes and hills" class="profile-img">
+                <img src="{% static 'images/profile-img.jpg' %}" alt="Golf Dunes and hills" class="profile-img">
             </div>          
     </div>
 

@@ -2,6 +2,7 @@
 {% block title %}Delete Booking{% endblock title %}
 
 {% block content%}
+{% load static %}
 <!-- This page is created as a layer of defence to ensure user
 really wants to delete from database -->
 <div class="container login-div">
@@ -31,7 +32,7 @@ really wants to delete from database -->
 </div>
 <!-- image that is displayed above the footer -->
 <div class="col-lg-12 account-img">
-    <img src="/static/images/account-login-img.jpg" alt="Golf Dunes and hills" class="profile-img"> 
+    <img src="{% static 'images/account-login-img.jpg' %}" alt="Golf Dunes and hills" class="profile-img"> 
 </div>
 
             
