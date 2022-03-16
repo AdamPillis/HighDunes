@@ -15,12 +15,12 @@
     <div class="container">
         <div class="row g-0">
             <div class="col-md-6 review-text">
-                <!-- Post title goes in these h1 tags -->
+                
                 <h1 class="review-title">My Tee Times</h1>
-                <!-- Post author goes before the | the post's created date goes after -->
-                <!-- <p class="review-details">Review by: {{ review.member }} | Created on: {{review.created_on}}</p> -->
+                
             </div>
             <div class="d-none d-md-block col-md-6 review-image">
+
                 <img src="/static/images/review-page-image.jpg" width="100%">
                 
             </div>
@@ -28,9 +28,7 @@
     </div>
 </div>
 <div class="text-center">
-    <a class="text-decoration-none" href="{% url 'add-booking' %}">
-        <button class="btn btn-hover mx-auto">New Booking</button>
-    </a>
+    <a class="text-decoration-none btn btn-hover mx-auto" href="{% url 'add-booking' %}">New Booking</a>
 </div>
 <div class="container-fluid">
         <!-- User Bookings List -->
@@ -42,7 +40,7 @@
                         <div class="card mb-sm-4">
                             <div class="card-body">
                                 
-                                <h3 class="card-title">Playing at <strong>{{ booking.play_time}}</strong> on <strong>{{ booking.play_date }}</strong></h3>
+                                <h3 class="card-title">Playing at <strong>{{ booking.play_time}}</strong> on <strong>{{ booking.play_date }}</strong> - Confirmed</h3>
                                 <hr>
                                 <h5>Bookig Details</h5>
                                 <br>
@@ -61,17 +59,18 @@
                                 
                                 <p class="card-text">Additional Requests: 
                                     <br>
-                                    <strong>{{ booking.extra_requests }}</strong></p> 
+                                    <strong>{{ booking.extra_requests }}</strong>
+                                </p> 
                                 
                                 <hr />
                             
-                                    <a href="{% url 'edit-booking' booking.id %}" class="text-decoration-none">
-                                        <button class="btn-primary booking-btn mb-3 mt-3 me-4">Update</button>
-                                    </a>
+                                <a href="{% url 'edit-booking' booking.id %}" class="text-decoration-none">
+                                    <button class="btn-primary booking-btn mb-3 mt-3 me-4">Update</button>
+                                </a>
                                     
-                                    <a href="{% url 'delete-booking' booking.id %}" class="text-decoration-none">
-                                        <button class="btn-danger mb-3 mt-3 ">Delete</button>
-                                    </a>
+                                <a href="{% url 'delete-booking' booking.id %}" class="text-decoration-none">
+                                    <button class="btn-danger mb-3 mt-3 ">Delete</button>
+                                </a>
                                 
                                 <!-- to display number of likes on each review -->
                                 <p class="card-text text-muted h6">
@@ -82,6 +81,7 @@
                         </div>
                     </div>
                     {% else %}
+                        <!-- if booking requested is not approved, message below is displayed -->
                         <h3 class="text-center mb-5">Your booking for {{ booking.play_date}} at {{ booking.play_time}} is awaiting for approval. Please check back later.</h3>
                     {% endif %}
                 {% endfor %}
@@ -91,9 +91,10 @@
     </div>
 {% endif %}
     <div class="row">
-    
-            <div class="col-lg-12 profile-img" style="background-image: url('/static/images/profile-img.jpg')"></div>
-        
+            <!-- image of golf ball above footer and under all user bookings -->
+            <div class="col-lg-12 profile-img">
+                <img src="/static/images/profile-img.jpg" alt="Golf Dunes and hills" class="profile-img">
+            </div>          
     </div>
 
 </div>

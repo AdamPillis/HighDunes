@@ -3,7 +3,9 @@
 {% load crispy_forms_tags %}
 {% block content%}
 <div class="container-fluid">
-    
+    <!-- includes BookingForm which is validated and then
+    stored within the Booking model database 
+    Crispy forms used to format BookingForm-->
     <div class="row">
         <div class="col-md-6 form-row">
             <form method="POST">
@@ -17,7 +19,7 @@
         </div>
     </div>
     <div class="row">
-    
+        <!-- photo used at the bottom of add_booking.html is the same as update_profile.html -->
         <div class="col-md-12 form-img">
             <img src="/static/images/update_profile.jpg" alt="Golf Dunes and hills" class="profile-img"> 
         </div>

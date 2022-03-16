@@ -19,8 +19,13 @@ class ReviewList(generic.ListView):
 
 
 class ReviewInDetail(View):
-    """X"""
-    def get(self, request, slug, *args, **kwargs):
+    """
+    Created to render new
+    html page with review data
+    and also include comment form
+    and comment section (review_page.html)
+    """
+    def get(self, request, slug):
         """X"""
         queryset = Review.objects.filter(status=1)
         review = get_object_or_404(queryset, slug=slug)
@@ -45,11 +50,17 @@ class ReviewInDetail(View):
             },
         )
 
-    def post(self, request, slug, *args, **kwargs):
-        """X"""
+    def post(self, request, slug):
+        """
+        Gets review object using its automatically created
+        slug. Posts comment_form data to comment model which
+        is linked with user through user id.
+        Renders review_page.html with all context.
+        """
         queryset = Review.objects.filter(status=1)
         review = get_object_or_404(queryset, slug=slug)
-        comments = review.comments.filter(approved=True).order_by("-created_on")
+        comments = review.comments.filter(
+            approved=True).order_by("-created_on")
         liked = False
         if review.likes.filter(id=self.request.user.id).exists():
             liked = True
@@ -78,6 +89,7 @@ class ReviewInDetail(View):
                 "disliked": disliked
             },
         )
+
 
 class ReviewLike(View):
     """

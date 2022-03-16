@@ -19,7 +19,8 @@
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
-    <!-- Navigation-->
+    <!-- Navigation bar with a dropdown menu if screen size drops to medium. Nav elements displayed depending
+        if user is registerd and whether its an admin log in or not-->
     <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}">High|Dunes <i class="fas fa-golf-ball m-auto"></i> Golf Club</a>
@@ -76,32 +77,33 @@
             </div>
         </div>
     </div>
-    
+    <!-- main content of other webpage will be displayd within block chain -->
     <main class="flex-shrink-0 main-bg mt-3 overflow-hidden">
         {% block content%}
 
         {% endblock%}
     </main>
+    <!-- footer displaying name of golf club and contains 4 social media links -->
     <footer class="footer bg-dark mt-auto pt-3 pb-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 display text-center mb-2 text-white">
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener" 
+                    <a class="footer-link" href="https://www.facebook.com" target="_blank" rel="noopener" 
                         aria-label="visit our Facebook page (opens in a new tab)">
                             <i class="fab fa-facebook-square"></i>
                     </a>
                     
-                    <a href="https://twitter.com" target="_blank" rel="noopener" 
+                    <a class="footer-link" href="https://twitter.com" target="_blank" rel="noopener" 
                         aria-label="visit our Twitter page (opens in a new tab)">
-                            <i class="fab fa-twitter-square"></i
-                    ></a>
+                            <i class="fab fa-twitter-square"></i>
+                    </a>
                     
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener" 
+                    <a class="footer-link" href="https://www.instagram.com" target="_blank" rel="noopener" 
                         aria-label="visit our Instagram page (opens in a new tab)">
                             <i class="fab fa-instagram-square"></i>
                     </a>
 
-                    <a href="https://www.youtube.com" target="_blank" rel="noopener" 
+                    <a class="footer-link" href="https://www.youtube.com" target="_blank" rel="noopener" 
                         aria-label="visit our Youtube channel (opens in a new tab)">
                             <i class="fab fa-youtube-square"></i> 
                     </a>
@@ -111,6 +113,7 @@
             <p class="m-0 text-capitalize text-center text-white">&copy; High|Dunes Golf Club. Designed by Adam Pillis</p>
         </div>
     </footer>
+    <!-- bootstrap JS and static script.js connected with base.html -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>

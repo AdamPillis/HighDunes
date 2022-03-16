@@ -28,7 +28,10 @@ nav .container-fluid{
   color: white;
 }
 a {
-  color: white;
+  color: black;
+}
+a:hover {
+  color: #46AB21;
 }
 hr {
   width: 80%;
@@ -44,14 +47,14 @@ hr {
     /* font-family: "montserrat"; */
     text-decoration: none;
     margin: 30px auto;
-    border: 1px solid #ff7675;
+    border: 1px solid #E8BD21;
     padding: 10px 25px;
     text-transform: uppercase;
     overflow: hidden;
     transition: 1s all ease;
   }
   .btn::before{
-    background: #ff7675;
+    background: #E8BD21;
     content: "";
     position: absolute;
     top: 50%;
@@ -177,6 +180,9 @@ hr {
 .display {
     display: flex;
     justify-content: space-evenly;
+}
+.footer-link {
+  color: #E8BD21;
 }
 
 i {

@@ -1,3 +1,8 @@
+"""
+from highdunes.urls, this is where the url connects with
+golf_booking urls depending on which imported view is
+requested. Using object id to link edit and delete function
+"""
 from django.urls import path
 from .views import bookings, add_booking, edit_booking, delete_booking
 

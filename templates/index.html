@@ -2,6 +2,9 @@
 
 {% block content%}
 <!-- Masthead-->
+<!-- Main image that a site visitor first sees (almost full screen size at 1200px) -->
+<!-- Welcome message is included right in the center with a 'sign up' button to start
+interacting with the site user -->
 <header class="masthead">
     <div class="container-fluid col-lg-6 position-relative">
         <div class="row justify-content-center">
@@ -19,9 +22,11 @@
     </div>
 </header>
 <!-- Icons Grid-->
+<!-- Containss three circular images and information that is vital for any golfer to know before making a booking, hence first under masthead -->
 <section class="features-icons bg-light text-center">
     <div class="container">
         <div class="row">
+            <!-- Clubhire Available -->
             <div class="col-lg-4">
                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                     <div class="features-icons-icon">
@@ -35,7 +40,7 @@
                     Don't worry even if you-re left-handed, we gotcha you covered!
                 </p>
             </div>
-            
+            <!-- Buggies Available -->
             <div class="col-lg-4">
                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                     <div class="features-icons-icon">
@@ -49,7 +54,7 @@
                     Buggie hire starts from €50.00 (two seater)
                 </p>
             </div>
-            
+            <!-- Halfway House -->
             <div class="col-lg-4">
                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                     <div class="features-icons-icon">
@@ -67,8 +72,10 @@
 </section>
 
 <!-- Image Showcases-->
+<!-- Three flexible, eye-catching images displayed to give further info regarding golf club features and golf course info -->
 <section class="showcase mx-auto">
     <div class="container-fluid p-0">
+        <!-- Driving Range -->
         <div class="row g-0">
             <div class="col-lg-6 order-lg-2">
                 <img class="showcase-img" src="/static/images/showcase-1-driving-range.jpg" alt="Driving Range">
@@ -86,6 +93,7 @@
             </div>
         </div>
         <hr class="mb-5 mt-5">
+        <!-- Twilight Golf -->
         <div class="row g-0">
             <div class="col-lg-6 text-white showcase-img">
                 <img class="showcase-img" src="/static/images/showcase-2-twilight.jpg" alt="Golf flag during sunset">
@@ -105,6 +113,7 @@
             </div>
         </div>
         <hr class="mb-5 mt-5">
+        <!-- Golf course strucuture -->
         <div class="row g-0">
             <div class="col-lg-6 order-lg-2">
                 <img class="showcase-img" src="/static/images/showcase-3-course-structure.jpeg" alt="Driving Range">
@@ -127,13 +136,15 @@
     </div>
 </section>
 <!-- Reviews and comments section for visitors to see -->
+<!-- feedback app is linked with this section so users can interact with reviews available -->
+<!-- each review is linked with its own comments -->
 <div class="container-fluid">
     <div class="row">
         <hr class="mb-5 mt-5">
         <h2 class="mt-3 text-center">Not convinced?</h2>
         <h4 class="mt-3 text-center">Read some of our latest reviews from our valued site members!</h4>
 
-        <!-- Blog Entries Column -->
+        <!-- Review Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for review in review_list %}
@@ -146,7 +157,7 @@
                             <p class="author">Written by: {{ review.member }}</p>
                             <br>
                             <p class="card-text">{{ review.excerpt }}</p>
-                            <!-- link to view each review in full and comment below -->
+                            <!-- link to view each review in full and comment below through review_page.html-->
                             <a href="{% url 'review_page' review.slug %}" class="review-link">
                                 <strong>Click to read more</strong>
                             </a>
@@ -163,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                {% if forloop.counter|divisibleby:3 %}
+                {% if forloop.counter|divisibleby:3 %} 
             </div>
             <div class="row">
                 {% endif %}
@@ -173,6 +184,7 @@
         </div>
     </div>
     {% if is_paginated %}
+    <!-- if more than two reviews are available, paginate -->
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
             {% if page_obj.has_previous %}
@@ -187,6 +199,7 @@
     {% endif %}
 </div>
 <!-- Register section above footer-->
+<!-- Main image with a div box, content and button interaction -->
 <section class="register-image">
     <div class="container-fluid col-lg-6 position-relative">
         <div class="row justify-content-center">

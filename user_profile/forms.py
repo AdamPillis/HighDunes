@@ -6,7 +6,7 @@ class ProfileUpdateForm(forms.ModelForm):
     """
     Profile form created using django's built in
     forms to display profile information to user
-    which can be updated
+    which can be updated but not deleted
     """
     class Meta:
         """

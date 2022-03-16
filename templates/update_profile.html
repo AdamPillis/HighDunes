@@ -5,6 +5,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-10 form-row">
+            <!-- form used to update user profile by creating an instance form -->
             <form method="POST">
                 {% csrf_token %}
                 {{ p_form|crispy }}
@@ -15,12 +16,11 @@
         
         </div>
     </div>
-    <div class="row">
-    
+    <!-- image displayed below form -->
+    <div class="row">   
         <div class="col-md-12 form-img">
             <img src="/static/images/update_profile.jpg" alt="Golf Dunes and hills" class="profile-img"> 
-        </div>
-    
+        </div>    
     </div>
 </div>
 

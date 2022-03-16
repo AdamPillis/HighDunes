@@ -1,19 +1,24 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect
 from django.contrib import messages
-from .models import Profile
 from .forms import ProfileUpdateForm
 
 
 def profile(request):
     """
-    X
+    when user clicks on profile in nav bar,
+    this function is called which renders
+    the view-profile page.
     """
     return render(request, 'view_profile.html')
 
 
 def update_profile(request):
     """
-    x
+    form imported and user profile
+    instance created for user to
+    updated and if valid, saves,
+    leaves a feedback message and
+    renders updated_profile.html
     """
     if request.method == 'POST':
         p_form = ProfileUpdateForm(
@@ -22,10 +27,10 @@ def update_profile(request):
         if p_form.is_valid():
             p_form.save()
             messages.add_message(
-                request, messages.SUCCESS, 
+                request, messages.SUCCESS,
                 'Your profile has been updated successfully.'
                 )
-            return redirect('user_profile')    
+            return redirect('user_profile')
     else:
         p_form = ProfileUpdateForm(instance=request.user.profile)
 

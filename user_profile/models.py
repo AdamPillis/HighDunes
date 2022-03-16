@@ -4,7 +4,10 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 from phonenumber_field.modelfields import PhoneNumberField
 from django_countries.fields import CountryField
 
-GENDER_STATUS = (("I Prefer Not To Say", "I Prefer Not To Say"), ("Male", "Male"), ("Female", "Female"))
+GENDER_STATUS = (
+    ("I Prefer Not To Say", "I Prefer Not To Say"),
+    ("Male", "Male"), ("Female", "Female")
+    )
 
 
 class Profile(models.Model):
@@ -18,7 +21,9 @@ class Profile(models.Model):
     last_name = models.CharField(max_length=50)
     email = models.EmailField()
     phone_number = PhoneNumberField()
-    gender = models.CharField(choices=GENDER_STATUS, default=False, max_length=20)
+    gender = models.CharField(
+        choices=GENDER_STATUS, default=False, max_length=20
+        )
     age = models.IntegerField(
         validators=[MinValueValidator(16), MaxValueValidator(100)], default=16)
     country = CountryField()
@@ -29,4 +34,4 @@ class Profile(models.Model):
         ordering = ['-created_on']
 
     def __str__(self):
-        return self.user.username
+        return str(self.last_name, self.first_name)

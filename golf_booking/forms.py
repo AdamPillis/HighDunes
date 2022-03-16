@@ -1,3 +1,7 @@
+"""
+Importing Booking model and create
+a form instance
+"""
 from django import forms
 from .models import Booking
 

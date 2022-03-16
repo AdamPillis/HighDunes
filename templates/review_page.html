@@ -22,17 +22,16 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-10 card mb-4 mt-3 mx-auto">
+            <!-- Card body used to display each review -->
             <div class="card-body">
-                <!-- The post content goes inside the card-text. -->
-                <!-- Use the | safe filter inside the template tags -->
                 <p class="card-text ">
                     {{ review.content | safe }}
                 </p>
                 <div class="row">
-
-                    <div class="col-1">
+                    <div class="col-1 me-4">
                         <strong>
                             {% if user.is_authenticated %}
+                            <!-- if user is logged in, give them permission to like reviews -->
                             <form class="d-line" action="{% url 'review_like' review.slug %}" method="POST">
                                 {% csrf_token %}
                                 {% if liked %}
@@ -49,12 +48,12 @@
                             <span class="text-secondary"><i class="far fa-thumbs-up"></i></span>
                             {% endif %}
                             <span class="text-secondary">{{ review.number_of_likes }}</span>
-                        </strong>
-                        
+                        </strong>                        
                     </div>
-                    <div class="col-1">
+                    <div class="col-1 me-4">
                         <strong>
                             {% if user.is_authenticated %}
+                            <!-- if user is logged in, give them permission to unlike reviews -->
                             <form class="d-line" action="{% url 'review_dislike' review.slug %}" method="POST">
                                 {% csrf_token %}
                                 {% if disliked %}
@@ -91,8 +90,10 @@
         </div>
     </div>
     <div class="row">
+        <!-- comment section where comments are visible if user is logged in and leave comment also -->
         <div class="col-md-10 card mb-4 mt-3 mx-auto">
             <h4>Review comments:</h4>
+            <!-- card is used to display each comment if approved by admin -->
             <div class="card-body">
                 <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
                 {% for comment in comments %}
@@ -119,11 +120,14 @@
 
                 <h3>Leave a comment:</h3>
                 <p>Posting as: {{ user.username }}</p>
+                <!-- form is used to post comment data and wait for admin approval. Loads as crispy form -->
                 <form method="post" style="margin-top: 1.3em;">
                     {{ comment_form | crispy }}
-                    <!-- to protect site -->
+                    <!-- to protect data being posted from site to database -->
                     {% csrf_token %}
-                    <button type="submit" class="btn btn-hover">Submit</button>
+                    <div class="text-center">
+                        <button class="btn btn-hover" type="submit">Submit</button>
+                    </div>
                 </form>
                 {% endif %}
                 {% endif %}
