@@ -28,10 +28,11 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['highdunes.herokuapp.com', 'localhost']
-
 
 
 # Application definition
@@ -61,7 +62,7 @@ INSTALLED_APPS = [
 # One site using one database so telling django site number is only one
 SITE_ID = 1
 
-# Add redirection templates so when logged in or out, 
+# Add redirection templates so when logged in or out,
 # site redirects to home page
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
@@ -75,7 +76,7 @@ MESSAGE_TAGS = {
     messages.ERROR: 'alert-danger',
 }
 
-# Telling cripsy forms to use bootstrap 4 template pack 
+# Telling cripsy forms to use bootstrap 4 template pack
 # through which classes will work the same
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
