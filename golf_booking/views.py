@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.models import User
+from user_profile.models import Profile
 from .models import Booking
 from .forms import BookingForm
 
@@ -25,6 +26,10 @@ def add_booking(request):
         if add_form.is_valid():
             booking = add_form.save()
             booking.booking_id = request.user
+            booking.first_name = request.user.profile.first_name
+            booking.last_name = request.user.profile.last_name
+            booking.phone_number = request.user.profile.phone_number
+            booking.email = request.user.profile.email
             booking.save()
             messages.add_message(request, messages.SUCCESS, 'Your booking has been created and is now waiting for approval.')
             return redirect('view-bookings')

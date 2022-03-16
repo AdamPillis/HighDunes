@@ -24,7 +24,7 @@ class Booking(models.Model):
     club_hire = models.BooleanField(null=False, blank=False, default=False)
     play_date = models.DateField(null=True)
     play_time = models.CharField(choices=TEE_TIMES, default=False, max_length=10)
-    extra_requests = models.TextField()
+    extra_requests = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
 
     class Meta:

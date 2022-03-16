@@ -15,10 +15,6 @@ class BookingForm(forms.ModelForm):
         """
         model = Booking
         fields = [
-            'first_name',
-            'last_name',
-            'email',
-            'phone_number',
             'number_of_holes',
             'number_of_players',
             'club_hire',
