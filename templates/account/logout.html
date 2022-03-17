@@ -5,13 +5,14 @@
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
 {% block content %}
+{% load static %}
 <div class="container login-div">
   <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
 
-      <h1>{% trans "Sign Out" %}</h1>
+      <h1 class="mt-3 text-center">{% trans "Sign Out" %}</h1>
 
-      <h5>{% trans 'Are you sure you want to sign out?' %}
+      <h5 class="mt-3 text-center">{% trans 'Are you sure you want to sign out?' %}
         <br>
         If not, <a class="link" href="{% url 'home' %}">click here</a> to cancel.
       </h5>
@@ -26,14 +27,15 @@
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
         {% endif %}
+        <div class="text-center">
         <button class="btn btn-hover right" type="submit">{% trans 'Sign Out' %}</button>
-        
+        </div>
       </form>
     </div>
   </div>
 </div>
-<div class="col-lg-12 account-img">
-  <img src="/static/images/account-login-img.jpg" alt="Golf Dunes and hills" class="profile-img"> 
+<div class="col-md-12 mt-5 account-img">
+  <img src="{% static 'images/account-login-img.jpg' %}" alt="Golf Course during sunset in Summer" class="profile-img"> 
 </div>    
 
 {% endblock %}
