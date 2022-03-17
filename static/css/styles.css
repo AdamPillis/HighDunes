@@ -75,29 +75,28 @@ hr {
 
 /* Landing page main image */
 .masthead {
-    position: relative;
-    max-width: 100%;
-    background-color: #343a40;
-    background: url("/static/images/masthead-main-image.jpg") no-repeat center center;
-    background-size: cover;
-    margin: 25px auto;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+  position: relative;
+  max-width: 100%;
+  background-color: #343a40;
+  background-size: cover;
+  margin: 25px auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 
-    /* zoom in style for main image - code taken from Love Running project */
-    animation-name: main-image-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+  /* zoom in style for main image - code taken from Love Running project */
+  animation-name: main-image-zoom;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
 }
 @keyframes main-image-zoom {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1);}
+  from {
+      transform: scale(1);
   }
+  to {
+      transform: scale(1.1);}
+}
 .masthead .container-fluid {
-    background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* features with icons? */
