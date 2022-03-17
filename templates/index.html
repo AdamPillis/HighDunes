@@ -6,9 +6,11 @@
 <!-- Main image that a site visitor first sees (almost full screen size at 1200px) -->
 <!-- Welcome message is included right in the center with a 'sign up' button to start
 interacting with the site user -->
-<header class="masthead" style="background-image: url('/static/images/masthead-main-image.jpg');">
+<header>
+    <div class="masthead">
+        <img src="{% static 'images/masthead-main-image.jpg' %}" alt="Landing Page, golf course layout during sunset">
     
-    <div class="container-fluid col-lg-6 position-relative">
+    <div class="container-fluid col-lg-6">
         <div class="row justify-content-center">
             <div class="col-md-8 align-self-sm-center">
                 <div class="text-center">
@@ -22,6 +24,7 @@ interacting with the site user -->
             </div>
         </div>
     </div>
+</div>
 </header>
 <!-- Icons Grid-->
 <!-- Containss three circular images and information that is vital for any golfer to know before making a booking, hence first under masthead -->
@@ -118,7 +121,7 @@ interacting with the site user -->
         <!-- Golf course strucuture -->
         <div class="row g-0">
             <div class="col-lg-6 order-lg-2">
-                <img class="showcase-img" src="{% static 'images/showcase-3-course-structure.jpeg' %}" alt="Driving Range">
+                <img class="showcase-img" src="{% static 'images/showcase-3-course-structure.jpeg' %}" alt="Structure of HighDunes Golf Course">
             </div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                 <h2 class="text-center p-2 mt-4 mx-3">
@@ -202,18 +205,21 @@ interacting with the site user -->
 </div>
 <!-- Register section above footer-->
 <!-- Main image with a div box, content and button interaction -->
-<section class="register-image">
-    <div class="container-fluid col-lg-6 position-relative">
-        <div class="row justify-content-center">
-            <div class="col-xl-6 align-self-sm-center">
-                <div class="text-center">
-                    <!-- Darkend box to include clear content and button style-->
-                    <h3 class="mb-3 mt-3 text-white">
-                        Our golf club is only at the start of its long, exciting journey. Are you ready to
-                        become one of our prime members and join us on this journey?
-                    </h3>
-                    
-                    <a class="btn btn-hover mx-auto text-white text-decoration-none" href="{% url 'account_signup' %}">Sign Up</a>                 
+<section>
+    <div class="register-image">
+        <img src="{% static 'images/register-section-image.jpg' %}" alt="Golfer taking iron shot in sunset">
+        <div class="container-fluid col-lg-6 position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 align-self-sm-center">
+                    <div class="text-center">
+                        <!-- Darkend box to include clear content and button style-->
+                        <h3 class="mb-3 mt-3 text-white">
+                            Our golf club is only at the start of its long, exciting journey. Are you ready to
+                            become one of our prime members and join us on this journey?
+                        </h3>
+                        
+                        <a class="btn btn-hover mx-auto text-white text-decoration-none" href="{% url 'account_signup' %}">Sign Up</a>                 
+                    </div>
                 </div>
             </div>
         </div>
