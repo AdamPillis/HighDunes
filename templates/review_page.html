@@ -112,7 +112,7 @@
         </div>
         <div class="col-md-8 card mb-4  mt-3 mx-auto ">
             <div class="card-body">
-                {% if commented %}
+                {% if commented and user.is_authenticated != user.is_superuser %}
                 <div class="alert alert-success" role="alert">
                     Your comment is awaiting approval
                 </div>

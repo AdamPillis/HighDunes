@@ -75,6 +75,8 @@ class ReviewInDetail(View):
             comment.review = review
             if request.user.is_superuser:
                 comment.approved = True
+            else:
+                comment.approved = False
             comment.save()
         else:
             comment_form = CommentForm()
