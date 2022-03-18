@@ -44,10 +44,11 @@
                 </a>
                 <!-- else allow them to see the update button which has the same link as above -->
                 {% else %}
-                <div class="text-center">
-                    <a class="text-decoration-none btn btn-hover mx-auto mt-5 mb-5" href="{% url 'user_update_profile' %}">
+                <div class="mt-4 mb-3 text-center">
+                    <a class="text-decoration-none btn btn-hover mt-2 mb-2" href="{% url 'user_update_profile' %}">
                         Update Profile
                     </a>
+                    <a class="text-decoration-none btn btn-hover mt-3 mb-3 ms-3" href="{% url 'add-booking' %}">New Booking</a>
                 </div>
                 {% endif %}
             </div>          

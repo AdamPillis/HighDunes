@@ -20,7 +20,7 @@ class BookingForm(forms.ModelForm):
     Booking form created using django's built in
     forms to display a form for the user to fill
     in to book tee time.
-    Using DateInput set above as widget to set 
+    Using DateInput set above as widget to set
     play_date = DateField()
     """
     class Meta:
