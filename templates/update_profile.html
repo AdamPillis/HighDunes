@@ -10,7 +10,7 @@
             <form method="POST">
                 {% csrf_token %}
                 {{ p_form|crispy }}
-                <div class="center">
+                <div class="text-center">
                     <button class="btn btn-hover form-button" type="submit">Update</button>
                 </div>
             </form>
@@ -19,7 +19,7 @@
     </div>
     <!-- image displayed below form -->
     <div class="row">   
-        <div class="col-md-12 form-img">
+        <div class="col-md-10 form-img">
             <img src="{% static 'images/update_profile.jpg' %}" alt="Golf Dunes and hills" class="profile-img"> 
         </div>    
     </div>

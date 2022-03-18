@@ -14,7 +14,8 @@
                         <hr>
                         <!-- if user profile's first name is empty (has not updated the empty profile) -->
                         {% if user.profile.first_name == "" %}
-                        <h2 class="text-center">You don't have a profile set up yet</h2>
+                        <h2 class="text-center">You don't have a profile set up yet.</h2>
+                        <p class="text-center">Not 16 yet? Please contact our golfshop about our junior rates!</p>
                         <!-- else display all the details entered below -->
                         {% else %}
                         <h5>My Personal Details</h5>
@@ -39,9 +40,11 @@
                 </div>
                 <!-- if the user has not created a profile yet, display button which is linked with create profile view function -->
                 {% if user.profile.first_name == "" %}
-                <a class="text-decoration-none" href="{% url 'user_update_profile' %}">
-                    <button class="btn btn-hover mx-auto mt-5 mb-5">Create Profile</button>
-                </a>
+                <div class="text-center">
+                    <a class="text-decoration-none btn btn-hover mt-5 mb-5" href="{% url 'user_update_profile' %}">
+                        Create Profile
+                    </a>
+                </div>
                 <!-- else allow them to see the update button which has the same link as above -->
                 {% else %}
                 <div class="mt-4 mb-3 text-center">
