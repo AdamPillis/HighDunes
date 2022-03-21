@@ -34,4 +34,4 @@ class Profile(models.Model):
         ordering = ['-created_on']
 
     def __str__(self):
-        return str(self.last_name, self.first_name)
+        return self.last_name
