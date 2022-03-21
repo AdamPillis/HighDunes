@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
+from django.contrib import messages
 from .models import Review
 from .forms import CommentForm
 
@@ -15,7 +16,7 @@ class ReviewList(generic.ListView):
     model = Review
     queryset = Review.objects.filter(status=1).order_by('-created_on')
     template_name = 'index.html'
-    paginate_by = 2
+    paginate_by = 3
 
 
 class ReviewInDetail(View):
@@ -70,9 +71,13 @@ class ReviewInDetail(View):
         # variable to hold form data
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
-            comment_form.instance.name = request.user.username
             comment = comment_form.save(commit=False)
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Thank you for your comment. It will be available to view shortly.'
+                )
             comment.review = review
+            comment.name = request.user.username
             if request.user.is_superuser:
                 comment.approved = True
             else:

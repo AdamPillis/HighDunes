@@ -51,6 +51,7 @@ class Comment(models.Model):
     review = models.ForeignKey(
         Review, on_delete=models.CASCADE, related_name='comments'
         )
+    name = models.TextField(blank=True)
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
