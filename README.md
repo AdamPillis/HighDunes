@@ -1,108 +1,45 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# [HighDunes Golf Club](https://highdunes.herokuapp.com/)
 
-Welcome AdamPillis,
+![Landing Page](static/images/landing-page-screenshot.png "HighDunes Landing Page")
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## 1. **Introduction**
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+### **What is HighDunes Golf Club?**
+HighDunes Golf Club is a golf web application designed for site users to interact with one another as well as the golf club itself. Other than a minimum age requirement of 16, no other requirements are needed to make full use of all features for any potential golfer.
+HighDunes Golf Club offers.
+- Site users are given the ability to create an account with ease (only username and password required) which automatically allows them to start interacting with some features such as *responding to reviews within the landing page*.
+- Create a **once-off** profile which is going to be used from there onwards to create tee bookings only within several clicks.
+- Once a profile is set up, the site user is given the ability to proceed with a booking by requesting as many as they wish within several clicks only, as long as they are signed in.
 
-## Gitpod Reminders
+HighDunes Golf Club web application is an imaginary golf club i.e. it does not exist. However, the **Project Aim** was to design an interactive website to show the potential of online presence for a golf club of any size, no matter how popular it is. The developer of this application has researched smaller golf clubs and how they present themselves online, collect data and interact with their users. His findings identified a lack of strong online presence. Most clubs only offer user interactivity via social media websites rather than creating their own online presence through which they could enhance business growth and collecting data which they could use to create marketing strategies and understand their potential target market.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+For this reason, the developer decided to create an imaginary website which shows off the power of online presence which is becoming a **must** feature for any business with the potential of increasing business growth. 
 
-`python3 -m http.server`
+ ### **How it works?**
 
-A blue button should appear to click: _Make Public_,
+ 1. The landing page offers a large, appealing image and a welcome message to the user as soon as they reach the website with a *Sign Up Button* to start interacting. On average, it takes three seconds for a user to decide whether they will stay on the site or leave so this has been taken into account as a result and this landing image has almost been designed to fill full view length. 
 
-Another blue button should appear to click: _Open Browser_.
+ 2. Given the developers knowledge of golf, he is fully aware of what potential customers are looking for when researching a golfing site. So therefore, the landing image is followed by more photos and short paragraphs which explain the most important features that the golf club offers. The club does not need to look 5 star in reality given that photos of any quality can be resized and styled to look appealing to the eye. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+ 3. After all of the features are explained briefly, the developer implemented an interactive section where users can view reviews and respond by liking, disliking them and even replying to them. The only requirement to start using this feature is just to create an account. No need for a profile.
 
-A blue button should appear to click: _Make Public_,
+ 4. This is followed by another section where the background image represents a regular image of a golf course in style and another opportunity to *sign up as a user*.
 
-Another blue button should appear to click: _Open Browser_.
+ 5. Once the user signs up, they are given the ability to create a profile which is only needed once and can be updated by them at any point. This can be reached via the *navigation bar* or if by mistake, they decide to book a tee time, they will be informed that a profile needs to be created before moving on. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+ 6. Profiles do not require approval, however, when it comes to making a tee time, users will need to wait for approval but users are notified of this once they submit their *tee booking request*.
 
-To log into the Heroku toolbelt CLI:
+ 7. In terms of a user profile, users are only given the ability to create, view and update their profile without approval. In terms of golf bookings, they are given full **CRUD** functionality given that they can create, view, update and delete their approved tee times without contacting the golf shop. 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  ### **Who is it for?**
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+  Ireland is one of the most popular golfing destinations. With over 220 golf courses and global target audience of 66 million golfers, the potential for business of a golf course of any size is big. Of course, in order to reach a global target market, online presence is almost becoming a *requirement*. International players will want to check out a particular golf they wish to play during their stay so it is important to provide them with essential features such as reviews and golf course features so they can plan ahead and request tee times with special requirements, if any. 
 
-------
+  **New Users**
 
-## Release History
+  New Users are given the ability to create an account by filling in the username and password section only. Entering an email is optional. Once an account is created by the user, they can proceed to create a profile which only needs to be done **once** and does not contain more than 6 fields. Once complete, they can process and book tee times of any amount of their choice and without needed to fill out personal details again. The booking process only requires several fields to be filled in also.
+  *New Users* do not need to go further than creating an account in order to start interacting with the site. They can like, dislike and comment under reviews without needing personal details. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+  **Returning Users**
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+  As a returning user with a profile already set up, the only requirement before proceeding with a booking or checking the status of a booking is to *log in* and click on *My Bookings*.
