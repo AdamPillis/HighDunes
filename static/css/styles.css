@@ -224,6 +224,11 @@ i {
   overflow: hidden;
 }
 
+.review-page-img {
+  width: 100%;
+  height: 100%;
+}
+
 .review-image:after {
   content: "";
   position: absolute;
