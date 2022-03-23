@@ -306,11 +306,166 @@ SCREENSHOT OF USER PROFILE NOT CREATED
 
 **With Profile Created**
 
-If the user is a returning user or has just created their profile, their profile details are displayed within a *bootstrap card* which is styled and two new buttons appear underneath their profile details.
+If the user is a returning user or has just created their profile, their profile details are displayed within a *bootstrap card* which is styled and two new buttons appear underneath their profile details. Looking at it from a site user's point of view, the following two buttons cover what the user would possibly like to do from this point i.e. *update their profile* or *make a booking*.
 
-**Update Profile**: Takes them to the "*edit_profile*" page where they can update their profile data model.
+**Update Profile**: Takes the user to the "*edit_profile*" page where they can update their profile data model.
 
 **New Booking**: Offers a direct link to making a new booking. This feature is only visible because the profile is created. If this was available before a profile is created, this could crash the website as each booking required profile details. 
 
 SCREENSHOT OF USER PROFILE CREATED
+
+The full width image at the bottom but above the footer is there to improve the page design and the same is used to maintain consistency throughout the website. 
+
+### 4. **Booking Page**
+
+This is the page where all user bookings are listed and full CRUD functionality is available to the user. The image and title at the top of the page is almost identical to the *review page* design for consistency as well as the image just above the footer and they both shrink and change design as the screen size gets smaller.
+
+**Without Profile Created**
+
+Without a booking created, the user is presented with a feedback message that states *The user needs to create a profile before proceeding with a booking. The *New Booking* button is hidden and the user's only option is to create a profile first before interacting further.
+
+SCREENSHOT OF BOOKING WITH NO PROFILE
+
+**With Profile Created but without Booking**
+
+Once the user has created a profile, the **New Booking** button appears and allows them to request a booking through the add_booking view function which appears within a styled form page. Nothing else is presented on the page until the user requests a booking. 
+
+SCREENSHOT OF BOOKING NO BOOKING
+
+**With Profile, one confirmed booking and one waiting for approval**
+
+Once a booking is complete and the user submits the form, the response they are given is through a django message which appears at the top of the page "*Your booking has been received and is waiting for approval*".
+
+Once the superuser approves the booking, the booking details appear to the user with **Confirmed** at the very top. **Two** buttons are presented to the user to allow them to use the other two of the CRUD functionality which is to:
+
+**Update**: Takes the user to edit_booking page where an instance of their booking appears within a preset form and they can update it as they wish. Of course, when the user submits, the booking_status automatically changes to Pending and will need superuser approval again. 
+
+**Delete**: Takes the user to the *delete_booking.html* which acts as a form of defense to ensure the user wants to delete data from the database. This is necessary because once the data is deleted, it cannot be returned. 
+
+SCREENSHOT OF BOOKING WITH BUTTONS ONE CONFIRMEED AND ONE APPROVAL
+
+### 5. **Delete_booking Page**
+
+This html page was created to ensure that the user wants to complete the last section of the CRUD functions i.e. the last step. Once it is deleted, it cannot be returned so therefore, the user is prevented from achieving this with one click but instead, they're taken to this page where a final warning question appears which states the **date** and **time** of the game booked.
+
+**Submit Button**: Completes the final step of CRUD. Deletes the booking for good and cannot be reversed. Once the clicked, the *view_bookings page* is updated, refreshed and the user is returned here while a feedback message appears at the top to confirm *The booking has been deleted*. 
+
+**Cancel**: Returns the user to the *view_bookings page* without deleting the booking. 
+
+SCREENSHOT OF DELETE PAGE
+
+### 6. **Custom created Form Pages**
+
+All of the custom created form pages below are listed together because they are all designed almost identically to maintain consistency of custom form presentation and display. The *buttons* displayed in all of these pages are also identical.
+
+**add_booking.html**
+
+This html page is used to display the form created within forms.py of the *golf_booking application*. Given that the user has filled in their profile, profile model data is used to autofill personal details within views.py and only essential questions are asked to reduced the length of time it takes the potential customer to book a tee time.
+
+Out of the six fields provided, only four are required which are basically dropdown options to enhance user interaction by not asking them to type unless they have something additional to request within *extra requests* or if they wish to hire clubs, just simply *tick the box*.
+
+SCREENSHOT OF ADD_BOOKING (NEW)
+
+**update booking** Called from **view_bookings.html** - **Update Button** the same add_booking.html page is used with the booking form but instead, using the booking ID and user details logged in, it creates an instance of the user booking details which the user can change as they wish. The booking status is changed to "Pending" once again once the submit button is clicked.
+
+SCREENSHOT OF UPDATE BOOKING
+
+SCREENSHOT OF STATUS TO FALSE
+
+**create profile**
+
+When a user creates an allauth account, an empty profile is created for them through *signals.py*. Within forms.py, a custom form is created to represent the profile data model with essential personal details. Every field is required to ensure that the user experience is maintained high and prevent the website from crashing if a field is left blank i.e. directly linked with bookings which requires personal details to function correctly. 
+
+The html page used to render this form is update_profile.html
+
+SCREENSHOT OF CREATE PROFILE FORM
+
+**update profile**
+
+The update_profile.html is used again to display this feature to the user for consistency. An instance of the logged in users profile is created within the form instead which the user can update and submit without needing approval and the changes are automatically updated and visible within the *view_profile page*.
+
+SCREENSHOT OF UPDATE PROFILE FORM
+
+### 6. **AllAuth Form Pages**
+
+All of the allauth form pages are designed and styled almost identically for better user experience. Buttons are styled identically again with an image displayed just abover the footer to keep the overall UX design style.
+
+**Sign Up Page**
+
+Only consists four fields of which only three is required. Of course looking at it from a user's point of view, they may click here by mistake so a **click here** is created at the top of the form which is liked with the *log in page*.
+
+The new user only needs to provide a username and a strong password which is validated through AllAuth.
+
+SCREENSHOT OF SIGN IN PAGE
+
+**Log In Page**
+
+Given the fields required to sign up, the user is only asked for a **username** and **password** to log in. From a user's perspective, incase they clicked on this tab instead of *Register*, a **sign up now** link is displayed for the user that they can click to be directed to the *Sign Up Page*.
+
+The **Remember Me** feature is available to the user to *tick* so that their log in details are saved to improve their future booking experience. 
+
+The **Sign In** button logs the user in and the *nav bar elements* displayed change accordingly.
+
+SCREENSHOT OF SIGN IN PAGE
+
+**Log Out Page**
+
+Once the user is logged in, the **LogOut** nav element comes available to them. However, rather than this function being a once click option, when the user clicks on the log out element, it directs them to the log out page where it is double checked before proceeding with this feature. 
+
+A **cancel** link is displayed to the user if they have changed their or if they clicked on this option by mistake. It redirects the user back to the home page. 
+
+However, if the user wishes to continue, they just have to simply click on the styled **Sign Out Button**.
+
+SCREENSHOT LOG OUT PAGE
+
+### 7. **AllAuth Admin Panel**
+
+The developer of this website created a nav bar element called **Admin** which only appears if the user logged in is the superuser (manager). This element is linked with Django's admin panel through which the manager is granted all of the CRUD functionality of all custom applications created as well as allauth's **user model**. They are given the ability to return to the website at any point through the link in the top right corner.
+
+SCREENSHOT OF ADMIN PANEL
+
+## Features (new ideas) 
+
+As the developer progressed with this project, he discovered lots of new potential features which could be implemented into this project to make it more interactive and attractive to site users/golf players. 
+
+- Make the email field within AllAuth signup.html required and use to implement new features such as **Confirm Email** and use it to **Change Password** and hence, design these features to match the main theme. 
+
+- Allow users to create reviews using the review model or import reviews from other sites like social media sites, Tripadvisor or golf course pages. The section provided for the reviews could be used for this feature while keeping other user interactive features such as like, dislike and reply.
+
+- For now, the golf clubs booking system is manual and the golf shop needs to manually approve bookings but the next update could implement a new *Application* in which a daily tee sheet is created within models.py for each day. This application would be directly linked with the *golf_bookings* application and all of its data would be used within the new application. Given that the new daily tee sheet model will contain dates and time slots, this can be linked with the date and time fields of each booking. Number of available clubs, buggies available for the day could also be implemented so that bookings can automatically be confirmed and the time booked cannot be booked twice. For now, the time slots differ by 30 minutes to give space for double, even triple bookings if needed. This is definitely a potential feature which will now be planned by the developer and included in the future. 
+
+- Include an **image gallery**, **halfway house menu**, **google maps to show the location of the course**, information regarding the **golf pro** and an about section for the **Golf Club itself**.
+
+- Search field at the top of the landing page so the user can search for specific features within the website.
+
+- Include some live features such as a video imported from *Youtube* which shows the layout of the course, given that the golf course has a video of their course on 'Youtube'.
+
+## 3. Testing and Bugs Fixed/Unfixed
+
+HighDunes Golf Club project testing has been broken down into several stages, given its complexity and reliance on a database and deployment.
+
+#### **Validator Testing**
+
+Validation testing for this project include HTML, CSS, little Javascript and Python code validation. 
+
+**Validating HTML Pages**
+
+[https://validator.w3.org/](https://validator.w3.org/) is used to test all html files and their code to ensure high coding standards. 
+
+**base.html**
+
+**index.html**
+
+**review_page.html**
+
+**view_profile.html**
+
+**update_profile.html**
+
+**view_bookings.html**
+
+**add_booking.html**
+
+**delete_booking.html**
+
 
