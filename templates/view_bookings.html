@@ -22,7 +22,7 @@
             </div>
             <div class="d-none d-md-block col-md-6 review-image">
 
-                <img src="{% static 'images/review-page-image.jpg' %}" width="100%">
+                <img src="{% static 'images/review-page-image.jpg' %}" alt="Image of golfer during sunset" class="review-page-img">
                 
             </div>
         </div>
@@ -32,64 +32,64 @@
     <a class="text-decoration-none btn btn-hover mx-auto" href="{% url 'add-booking' %}">New Booking</a>
 </div>
 <div class="container-fluid">
-        <!-- User Bookings List -->
-        <div class="col-12 mt-3 left">
-            <div class="row">
-                {% for booking in bookings %}
-                    {% if booking.booking_status == 1 %}     
-                    <div class="col-md-10 mx-auto">
-                        <div class="card mb-sm-4">
-                            <div class="card-body">
-                                
-                                <h3 class="card-title">Playing at <strong>{{ booking.play_time}}</strong> on <strong>{{ booking.play_date }}</strong> - Confirmed</h3>
-                                <hr>
-                                <h5>Bookig Details</h5>
-                                <br>
-                                <p class="card-text"> Email : <strong>{{ booking.email }}</strong></p>
-                                <p class="card-text"> Contact No : <strong>{{ booking.phone_number }}</strong></p>
-                                <p class="card-text">Players: <strong>{{ booking.number_of_players }}</strong></p>
-                                <p class="card-text">Game Length: <strong>{{ booking.number_of_holes }} holes</strong></p>
-                                <p class="card-text">
-                                    {% if booking.club_hire == False%}
-                                    Club Hire: <strong>NO</strong>
-                                    {% else %}
-                                    Club Hire: <strong>YES</strong>
-                                    {% endif %}
-                                </p>
-                                <!-- link to view each review in full and comment below -->
-                                
-                                <p class="card-text">Additional Requests: 
-                                    <br>
-                                    <strong>{{ booking.extra_requests }}</strong>
-                                </p> 
-                                
-                                <hr />
+    <!-- User Bookings List -->
+    <div class="col-12 mt-3 left">
+        <div class="row">
+            {% for booking in bookings %}
+                {% if booking.booking_status == 1 %}     
+                <div class="col-md-10 mx-auto">
+                    <div class="card mb-sm-4">
+                        <div class="card-body">
                             
-                                <a href="{% url 'edit-booking' booking.id %}" class="text-decoration-none">
-                                    <button class="btn-primary booking-btn mb-3 mt-3 me-4">Update</button>
-                                </a>
-                                    
-                                <a href="{% url 'delete-booking' booking.id %}" class="text-decoration-none">
-                                    <button class="btn-danger mb-3 mt-3 ">Delete</button>
-                                </a>
+                            <h3 class="card-title">Playing at <strong>{{ booking.play_time}}</strong> on <strong>{{ booking.play_date }}</strong> - Confirmed</h3>
+                            <hr>
+                            <h5>Bookig Details</h5>
+                            <br>
+                            <p class="card-text"> Email : <strong>{{ booking.email }}</strong></p>
+                            <p class="card-text"> Contact No : <strong>{{ booking.phone_number }}</strong></p>
+                            <p class="card-text">Players: <strong>{{ booking.number_of_players }}</strong></p>
+                            <p class="card-text">Game Length: <strong>{{ booking.number_of_holes }} holes</strong></p>
+                            <p class="card-text">
+                                {% if booking.club_hire == False%}
+                                Club Hire: <strong>NO</strong>
+                                {% else %}
+                                Club Hire: <strong>YES</strong>
+                                {% endif %}
+                            </p>
+                            <!-- link to view each review in full and comment below -->
+                            
+                            <p class="card-text">Additional Requests: 
+                                <br>
+                                <strong>{{ booking.extra_requests }}</strong>
+                            </p> 
+                            
+                            <hr />
+                        
+                            <a href="{% url 'edit-booking' booking.id %}" class="text-decoration-none">
+                                <button class="btn-primary booking-btn mb-3 mt-3 me-4">Update</button>
+                            </a>
                                 
-                                <!-- to display number of likes on each review -->
-                                <p class="card-text text-muted h6">
-                                    Created on: {{ booking.created_on}} |  By: {{ booking.last_name}}, {{ booking.first_name}}
-                                </p>
-                                
-                            </div>
+                            <a href="{% url 'delete-booking' booking.id %}" class="text-decoration-none">
+                                <button class="btn-danger mb-3 mt-3 ">Delete</button>
+                            </a>
+                            
+                            <!-- to display number of likes on each review -->
+                            <p class="card-text text-muted h6">
+                                Created on: {{ booking.created_on}} |  By: {{ booking.last_name}}, {{ booking.first_name}}
+                            </p>
+                            
                         </div>
                     </div>
-                    {% else %}
-                        <!-- if booking requested is not approved, message below is displayed -->
-                        <h3 class="text-center mb-5">Your booking for {{ booking.play_date}} at {{ booking.play_time}} is awaiting for approval. Please check back later.</h3>
-                    {% endif %}
-                {% endfor %}
-            </div>
+                </div>
+                {% else %}
+                    <!-- if booking requested is not approved, message below is displayed -->
+                    <h3 class="text-center mb-5">Your booking for {{ booking.play_date}} at {{ booking.play_time}} is awaiting for approval. Please check back later.</h3>
+                {% endif %}
+            {% endfor %}
         </div>
-        
     </div>
+    
+</div>
     <div class="text-center">
         <a class="text-decoration-none btn btn-hover mx-auto" href="{% url 'home' %}">Home Page</a>
     </div>
@@ -100,6 +100,4 @@
                 <img src="{% static 'images/profile-img.jpg' %}" alt="Golf Dunes and hills" class="profile-img">
             </div>          
     </div>
-
-</div>
 {% endblock%}

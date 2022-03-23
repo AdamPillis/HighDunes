@@ -450,22 +450,52 @@ Validation testing for this project include HTML, CSS, little Javascript and Pyt
 
 **Validating HTML Pages**
 
-[https://validator.w3.org/](https://validator.w3.org/) is used to test all html files and their code to ensure high coding standards. 
+[https://validator.w3.org/](https://validator.w3.org/) is used to test all html files and their code to ensure high coding standards. Base.html is not tested given that the following html pages would not work without it and the content within the base.html is displayed correctly.
 
-**base.html**
+All of the testing below was done through the source code of each page on the **deployed** version of the project.
 
 **index.html**
 
+SCREENSHOT
+
 **review_page.html**
+
+SCREENSHOT
 
 **view_profile.html**
 
+SCREENSHOT
+
 **update_profile.html**
+
+SCREENSHOT
 
 **view_bookings.html**
 
+SCREENSHOT
+
 **add_booking.html**
 
+SCREENSHOT
+
 **delete_booking.html**
+
+SCREENSHOT
+
+**signup.html**
+
+SCREENSHOT
+
+**login.html**
+
+SCREENSHOT
+
+**logout.html**
+
+SCREENSHOT
+
+**Validating CSS Page**
+
+Only one css file within this project which is located in *static/css/styles.css*
 
 
