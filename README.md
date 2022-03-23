@@ -496,6 +496,185 @@ SCREENSHOT
 
 **Validating CSS Page**
 
+[https://validator.w3.org/](https://jigsaw.w3.org/css-validator/) is used to test CSS files and their code to ensure high coding standards.
 Only one css file within this project which is located in *static/css/styles.css*
 
+**style.css**
 
+SCREENSHOT
+
+**Validating Python files**
+
+[http://pep8online.com/](http://pep8online.com/) is used to test Python files and their code to ensure high coding standards.
+
+1. #### feedback Application
+
+Testing every custom python file within this application.
+
+**admin.py**
+
+SCREENSHOT
+
+**forms.py**
+
+SCREENSHOT
+
+**models.py**
+
+SCREENSHOT
+
+**urls.py**
+
+SCREENSHOT
+
+**views.py**
+
+SCREENSHOT
+
+2. #### golf_booking Application
+
+Testing every custom python file within this application.
+
+**admin.py**
+
+SCREENSHOT
+
+**forms.py**
+
+SCREENSHOT
+
+**models.py**
+
+SCREENSHOT
+
+**urls.py**
+
+SCREENSHOT
+
+**views.py**
+
+SCREENSHOT
+
+3. #### user_profile Application
+
+Testing every custom python file within this application.
+
+**admin.py**
+
+SCREENSHOT
+
+**forms.py**
+
+SCREENSHOT
+
+**apps.py**
+
+SCREENSHOT
+
+**models.py**
+
+SCREENSHOT
+
+**urls.py**
+
+SCREENSHOT
+
+**views.py**
+
+SCREENSHOT
+
+**Light-house Report**
+
+Within DevTools, the lighthouse report is used to test overall performance of the website.
+
+Performance has been categorised and is the only element not above 90% given that some of the images take much longer to load given their size i.e. main landing image which is essential to be good quality and big to attract new site visitors.
+
+SCREENSHOT OF LIGHTHOUSE REPORT
+
+### **Testing colour contrast**
+
+[Coolors.co/palette](https://coolors.co/palette/a08219-b08f1b-e8bd21-eece59-f4de90-a3d590-75c059-46ab21-36821b-265815) site was used to chose the color theme for the project as it provides a set of colors which work well together and the contrast perfect.
+
+SCREENSHOT OF COOLORS COLORS
+
+### **Search Engine Testing**
+
+This project was tested through three several search engines including Google Chrome which is the creator's default search engine. Internet Explorer was not included below given its lack of popularity. 
+
+1. **Google Chrome (default)**
+
+2. **Mozilla Firefox**
+
+Each section displayed as a page was tested and checked through *Mozilla Firefox* and no issues detected.
+
+**Landing Page**
+
+![Mozilla Firefox landing page](assets/images/mozilla-firefox-landing-page.PNG "Mozilla Firefox landing page")
+
+**View Reviews Page**
+
+![Mozilla Firefox menu page](assets/images/mozilla-firefox-menu-page.PNG "Mozilla Firefox menu page")
+
+**View Profile Page**
+
+![Mozilla Firefox rules page](assets/images/mozilla-firefox-rules-page.PNG "Mozilla Firefox rules page")
+
+**View Bookings**
+
+![Mozilla Firefox game page](assets/images/mozilla-firefox-game-page.PNG "Mozilla Firefox game page")
+
+**Delete Bookings**
+
+![Mozilla Firefox exit page](assets/images/mozilla-firefox-exit-page.PNG "Mozilla Firefox exit page")
+
+**Register Page**
+
+![Mozilla Firefox end page](assets/images/mozilla-firefox-end-page.PNG "Mozilla Firefox end page")
+
+**Log In Page**
+
+![Mozilla Firefox end page](assets/images/mozilla-firefox-end-page.PNG "Mozilla Firefox end page")
+
+**Logout Page**
+
+![Mozilla Firefox end page](assets/images/mozilla-firefox-end-page.PNG "Mozilla Firefox end page")
+
+3. **Microsoft Edge**
+
+Each section displayed as a page was tested and checked through *Microsoft Edge* and no issues detected.
+
+**Landing Page**
+
+![Microsoft Edge landing page](assets/images/microsoft-edge-landing-page.PNG "Microsoft Edge landing page")
+
+**View Reviews Page**
+
+![Microsoft Edge menu page](assets/images/microsoft-edge-menu-page.PNG "Microsoft Edge menu page")
+
+**View Profile Page**
+
+![Microsoft Edge rules page](assets/images/microsoft-edge-rules-page.PNG "Microsoft Edge rules page")
+
+**View Bookings**
+
+![Microsoft Edge game page](assets/images/microsoft-edge-game-page.PNG "Microsoft Edge game page")
+
+**Delete Bookings**
+
+![Microsoft Edge exit page](assets/images/microsoft-edge-exit-page.PNG "Microsoft Edge exit page")
+
+**Register Page**
+
+![Microsoft Edge end page](assets/images/microsoft-edge-end-page.PNG "Microsoft Edge end page")
+
+**Log In Page**
+
+![Microsoft Edge end page](assets/images/microsoft-edge-end-page.PNG "Microsoft Edge end page")
+
+**Log Out Page**
+
+![Microsoft Edge end page](assets/images/microsoft-edge-end-page.PNG "Microsoft Edge end page")
+
+### **Application Features Test**
+
+### **Testing Responsiveness**

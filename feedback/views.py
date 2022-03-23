@@ -74,7 +74,7 @@ class ReviewInDetail(View):
             comment = comment_form.save(commit=False)
             messages.add_message(
                 request, messages.SUCCESS,
-                'Thank you for your comment. It will be available to view shortly.'
+                'Thank you for your comment.'
                 )
             comment.review = review
             comment.name = request.user.username
