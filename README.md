@@ -235,7 +235,7 @@ Again, the headings were chosen so that the paragraphs underneath do not have to
 
 **Showcase Image 1 - Driving Range**
 
-![Driving Range section]()
+![Driving Range section](static/images/showcase-one.png)
 
 **Showcase Image 2 - Twilight Golf**
 
@@ -458,52 +458,61 @@ All of the testing below was done through the source code of each page on the **
 
 **index.html**
 
-SCREENSHOT
+![index.html validation](static/images/index.html-validation.png)
 
 **review_page.html**
 
-SCREENSHOT
+![review_page.html validation](static/images/review_page.html-validation.png)
 
 **view_profile.html**
 
-SCREENSHOT
+![view_profile.html validation](static/images/view_profile.html-validation.png)
 
 **update_profile.html**
 
-SCREENSHOT
+![update_profile.html validation](static/images/update_profile.html-validation.png)
 
 **view_bookings.html**
 
-SCREENSHOT
+![view_bookings.html validation](static/images/view_bookings.html-validation.png)
 
 **add_booking.html**
 
-SCREENSHOT
+![add_booking.html validation](static/images/add_booking.html-validation.png)
 
 **delete_booking.html**
 
-SCREENSHOT
+![delete_booking.html validation](static/images/delete_booking.html-validation.png)
 
 **signup.html**
 
-SCREENSHOT
+![signup.html validation](static/images/signup.html-validation.png)
 
 **login.html**
 
-SCREENSHOT
+![login.html validation](static/images/login.html-validation.png)
 
 **logout.html**
 
-SCREENSHOT
+![logout.html validation](static/images/logout.html-validation.png)
 
-**Validating CSS Page**
+**Validating CSS file**
 
 [https://validator.w3.org/](https://jigsaw.w3.org/css-validator/) is used to test CSS files and their code to ensure high coding standards.
 Only one css file within this project which is located in *static/css/styles.css*
 
 **style.css**
 
-SCREENSHOT
+![style.css validation](static/images/style.css-validation.png)
+
+**Validating JavaScript file**
+
+[https://jshint.com/](https://jshint.com/) is used to test js files and their code to ensure high coding standards.
+Only one js file within this project which is located in *static/js/script.js*
+
+**script.js**
+
+![script.js validation](static/images/script.js-validation.png)
 
 **Validating Python files**
 
