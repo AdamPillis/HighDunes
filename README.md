@@ -679,7 +679,7 @@ Each section displayed as a page was tested and checked through *Microsoft Edge*
 
 #### **Automated Testing**
 
-Some automated testing has been completed on this project. This website consists of three separate applications. Within each of these, files **urls.py** and **forms.py** have been tested and overall, 16 automated tests are running error free and each test was further testing by inserting unexpected data to ensure tests are running as they should.
+Some automated testing has been completed on this project. This website consists of three separate applications. Within each of these, files **urls.py** and **forms.py** have been tested and overall, **16** automated tests are running error free and each test was further testing by inserting unexpected data to ensure tests are running as they should.
 
 **1. feedback application**
 
@@ -699,23 +699,46 @@ Some automated testing has been completed on this project. This website consists
 
 **test_urls.py**: Two automated tests running successfully to check CRUDs functionality url paths.
 
+#### **Manual Testing**
+
+While the developer is fully aware of the advantages of full automated testing, he made a decisions to test the rest of the project manually in detail as result of the **upcoming due date**.
+
+
 
 ### **Testing Responsiveness**
 
 [Am I Responsive](http://ami.responsivedesign.is/) website was used to test the responsiveness of HighDunes Golf Web Application on several devices deferring in sizes "from small to large".
 
+This website was also used to test the web features on all screen sizes.
+
 **Register Page**
+
+SCREENSHOT
 
 **Log In Page**
 
+SCREENSHOT
+
 **Log Out Page**
+
+SCREENSHOT
 
 **Landing Page**
 
+SCREENSHOT
+
 **View Reviews Page**
+
+SCREENSHOT
 
 **View Profile Page**
 
+SCREENSHOT
+
 **View Bookings**
 
+SCREENSHOT
+
 **Delete Bookings**
+
+SCREENSHOT
