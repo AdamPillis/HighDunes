@@ -186,8 +186,7 @@ If the user is not signed in, only three features are visible.
 2. **Register**
 3. **Login**
 
-SCREENSHOT OF HEADER NOT SIGNED IN
-![]()
+![Navbar when user is not signed in](static/images/header-not-logged-in.png)
 
 **Signed In as Site USer**
 
@@ -198,7 +197,7 @@ If the user is signed in, list elements visible change, apart from the *Home Tab
 3. **My Profile**
 4. **My Bookings**
 
-SCREENSHOT OF HEADER SIGNED IN AS USER
+![Navbar when user is signed in](static/images/header-logged-in-user.png)
 
 **Signed In as Admin**
 
@@ -206,7 +205,7 @@ If signed in as Admin, an additional element is visible as well as the above whi
 
 5. **Admin**
 
-SCREENSHOT OF HEADER SIGNED IN AS ADMIN
+![Navbar when user is signed in as Admin](static/images/header-logged-in-admin.png)
 
 #### **Landing Page Image and message**
 
@@ -214,7 +213,7 @@ The size of the landing image is almost 100VH and its main aim is to catch the a
 
 A warm welcome message is displayed within the image to start communicating with all site users. The new site user is told that the sign up process will not take long. The golf club's age requirement is also explained while a stylish **Sign In** button is placed underneath to prevent a user from having to look around for a sign in option. Of course, as a returning user, they will be aware that the *all features can be reached via the nav bar*.
 
-SCREENSHOT OF LANDING IMAGE
+![Main Landing Image](static/images/landing-image.png)
 
 #### **Feature's Section**
 
@@ -226,7 +225,7 @@ The features sections consists of three parts/golf club features which can look 
 
 Most of the time, these three features alone can answer the first several questions of any golfer regarding a golf course which is why they were chosen. Short paragraphs explain each in details so users don't have to read *too much* while the images above each text are styled elegantly. The header of each part was also worded so that golfers don't need to the paragraphs underneath in order to understand what is available. 
 
-SCREENSHOT OF FEATURES SECTION 
+![Three Features Section](static/images/features-section.png)
 
 #### **Showcase Images**
 
@@ -236,15 +235,15 @@ Again, the headings were chosen so that the paragraphs underneath do not have to
 
 **Showcase Image 1 - Driving Range**
 
-SCREENSHOT OF SHOWCASE IMAGE 1
+![Driving Range section]()
 
 **Showcase Image 2 - Twilight Golf**
 
-SCREENSHOT OF SHOWCASE IMAGE 2
+![Twilight section](static/images/showcase-two.png)
 
 **Showcase Image 3 - Course Design**
 
-SCREENSHOT OF SHOWCASE IMAGE 3
+![Course Design section](static/images/showcase-three.png)
 
 #### **Review Section**
 
@@ -252,13 +251,13 @@ The heading of this section also demonstrates how the website interacts with eac
 
 This section lists three reviews per page and displays most of the data for each review. A signed in user has the ability to like or dislike a review which is not a feature available through the landing page but the number of likes and dislikes are displayed so that the user is aware what golfers agree with and what they disagree with i.e. what to look out for without needing to click on a review.
 
-SCREENSHOT OF REVIEW SECTION
+![Reviews section](static/images/review-section.png)
 
 #### **Sign Up Section**
 
 This section contains an image of a golfer playing an ordinary golf course, yet still appealing to the eye. A text box directly aiming at the site user is also displayed, making a statement and also asking them a question with a possible answer of **Signing Up**. Hence, a button is provided which is linked with the sign up html page. 
 
-SCREENSHOT OF SIGN UP
+![Sign Up section](static/images/signup-section.png)
 
 #### **Footer**
 
@@ -266,7 +265,7 @@ The footer is included within **base.html** to ensure that the user has access t
 
 The background color of the icons match the color of the buttons for more consistency. 
 
-SCREENSHOT OF LANDING FOOTER
+![Footer in all html pages](static/images/footer-section.png)
 
 ### 2. **Review Page**
 
@@ -283,7 +282,7 @@ A back to home **button** is placed at the bottom of the page so the user can ex
 
 If the user is not logged in, they have no access to any of the interactive features. The user can only view the review in detail.
 
-SCREENSHOT IF USER IS NOT LOGGED IN
+![Review page when user is logged out](static/images/review-page-logged-out.png)
 
 **Signed In**
 
@@ -293,7 +292,7 @@ The **leave a comment** feature also comes available to the user so they can jus
 
 If the user logged in is the **superuser**, then the need to approve the comment is lifted and the manager of HighDunes Golf Club can freely leave comments of their choice without approval required. 
 
-SCREENSHOT OF USER LOGGED IN
+![Review page when user is logged in](static/images/review-page-logged-in.png)
 
 ### 3. **Profile Page**
 
@@ -307,7 +306,7 @@ If the user is new to the website and just finished registering, they would not 
 
 A **Create Profile** button is presented underneath the above text for them to click on which takes them to the *add_profile page* where they can create their profile.
 
-SCREENSHOT OF USER PROFILE NOT CREATED
+![Profile page without a profile](static/images/profile-page-without-profile.png)
 
 **With Profile Created**
 
@@ -317,7 +316,7 @@ If the user is a returning user or has just created their profile, their profile
 
 **New Booking**: Offers a direct link to making a new booking. This feature is only visible because the profile is created. If this was available before a profile is created, this could crash the website as each booking required profile details. 
 
-SCREENSHOT OF USER PROFILE CREATED
+![Profile page without a profile](static/images/profile-page-with-profile.png)
 
 The full width image at the bottom but above the footer is there to improve the page design and the same is used to maintain consistency throughout the website. 
 
@@ -329,13 +328,13 @@ This is the page where all user bookings are listed and full CRUD functionality 
 
 Without a booking created, the user is presented with a feedback message that states *The user needs to create a profile before proceeding with a booking. The *New Booking* button is hidden and the user's only option is to create a profile first before interacting further.
 
-SCREENSHOT OF BOOKING WITH NO PROFILE
+![Booking page with no profile](static/images/booking-page-no-profile.png)
 
 **With Profile Created but without Booking**
 
 Once the user has created a profile, the **New Booking** button appears and allows them to request a booking through the add_booking view function which appears within a styled form page. Nothing else is presented on the page until the user requests a booking. 
 
-SCREENSHOT OF BOOKING NO BOOKING
+![Booking page with profile but no booking](static/images/booking-page-no-booking.png)
 
 **With Profile, one confirmed booking and one waiting for approval**
 
@@ -347,7 +346,7 @@ Once the superuser approves the booking, the booking details appear to the user 
 
 **Delete**: Takes the user to the *delete_booking.html* which acts as a form of defense to ensure the user wants to delete data from the database. This is necessary because once the data is deleted, it cannot be returned. 
 
-SCREENSHOT OF BOOKING WITH BUTTONS ONE CONFIRMEED AND ONE APPROVAL
+![Booking page with confirmed and pending booking](static/images/booking-page-confirmed-not-confirmed.png)
 
 ### 5. **Delete_booking Page**
 
@@ -357,7 +356,7 @@ This html page was created to ensure that the user wants to complete the last se
 
 **Cancel**: Returns the user to the *view_bookings page* without deleting the booking. 
 
-SCREENSHOT OF DELETE PAGE
+![Delete booking page](static/images/delete-page.png)
 
 ### 6. **Custom created Form Pages**
 
@@ -369,13 +368,11 @@ This html page is used to display the form created within forms.py of the *golf_
 
 Out of the six fields provided, only four are required which are basically dropdown options to enhance user interaction by not asking them to type unless they have something additional to request within *extra requests* or if they wish to hire clubs, just simply *tick the box*.
 
-SCREENSHOT OF ADD_BOOKING (NEW)
+![Add new booking page](static/images/add-booking-form.png)
 
 **update booking** Called from **view_bookings.html** - **Update Button** the same add_booking.html page is used with the booking form but instead, using the booking ID and user details logged in, it creates an instance of the user booking details which the user can change as they wish. The booking status is changed to "Pending" once again once the submit button is clicked.
 
-SCREENSHOT OF UPDATE BOOKING
-
-SCREENSHOT OF STATUS TO FALSE
+![Update booking page](static/images/update-booking-form.png)
 
 **create profile**
 
@@ -383,13 +380,13 @@ When a user creates an allauth account, an empty profile is created for them thr
 
 The html page used to render this form is update_profile.html
 
-SCREENSHOT OF CREATE PROFILE FORM
+![Create profile form page](static/images/create-profile-form.png)
 
 **update profile**
 
 The update_profile.html is used again to display this feature to the user for consistency. An instance of the logged in users profile is created within the form instead which the user can update and submit without needing approval and the changes are automatically updated and visible within the *view_profile page*.
 
-SCREENSHOT OF UPDATE PROFILE FORM
+![Update profile form page](static/images/update-profile-form.png)
 
 ### 6. **AllAuth Form Pages**
 
@@ -401,7 +398,7 @@ Only consists four fields of which only three is required. Of course looking at 
 
 The new user only needs to provide a username and a strong password which is validated through AllAuth.
 
-SCREENSHOT OF SIGN IN PAGE
+![Sign up page](static/images/sign-up-page.png)
 
 **Log In Page**
 
@@ -411,7 +408,7 @@ The **Remember Me** feature is available to the user to *tick* so that their log
 
 The **Sign In** button logs the user in and the *nav bar elements* displayed change accordingly.
 
-SCREENSHOT OF SIGN IN PAGE
+![Log in page](static/images/sign-in-page.png)
 
 **Log Out Page**
 
@@ -421,13 +418,13 @@ A **cancel** link is displayed to the user if they have changed their or if they
 
 However, if the user wishes to continue, they just have to simply click on the styled **Sign Out Button**.
 
-SCREENSHOT LOG OUT PAGE
+![Log out page](static/images/sign-out-page.png)
 
 ### 7. **AllAuth Admin Panel**
 
 The developer of this website created a nav bar element called **Admin** which only appears if the user logged in is the superuser (manager). This element is linked with Django's admin panel through which the manager is granted all of the CRUD functionality of all custom applications created as well as allauth's **user model**. They are given the ability to return to the website at any point through the link in the top right corner.
 
-SCREENSHOT OF ADMIN PANEL
+![Admin panel page](static/images/admin-panel-page.png)
 
 ## Features (new ideas) 
 
