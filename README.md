@@ -53,9 +53,7 @@ As a returning user with a profile already set up, the only requirement before p
 
 The developer used an Agile Approach to start the planning process. **EPIC** User Stories were first collected and reviewed in order to understand what the users would expect to see in such web application, from both a site user and an admin perspective. 
 
-##SCREENSHOT
-
-![Epic User Stories]( "Epic User Stories") 
+![Epic User Stories](static/images/epic-user-stories.png) 
 
 Some of these *Epic User Stories* are quite extensive in terms of workload in comparison to one another. Therefore, the developer broke some of these larger epic user stories to smaller user stories in order to be able to plan further and estimate the possible length of time, the project will take altogether. 
 
@@ -63,16 +61,22 @@ On GitHub, he created a new *Issue Template* through which he can break and crea
 
 One Agile Tool used was to break these user stories down further. **Acceptance Criteria** and **Tasks** were added to each of these user stories to realise the workload of each and what is expected from each user story. One example is shown below.
 
-SCREENSHOT OF FULL ISSUE
+![Full User Story, Acceptance Criteria and Tasks](static/images/acceptance-criteria-tasks.png) 
 
 Another Agile tool used to proceed with these issues was to implement the **MOSCOW Prioratization** and split these User Stories into 4 categories. *Must-have*, *Should-have*, *Could-have* and *Would-have* issues. A *label* for each was created and each issue was labelled in order of importance.
 A **Milestone** called *HighDunes Golf Club* was then created where the developer prioratized the user stories in order of importance which offered a clean direction in terms of the overall, project workflow.
 
-SCREENSHOT OF MILESTONE
+**Milestone Start of Project**
+
+![Milestone Start of Project](static/images/github-milestone-one.png) 
+
+**Milestone at End of Project**
+
+![Milestone End of Project](static/images/github-milestone-two.png) 
 
 A **New Project** was created on GitHub called *HighDunes Golf Course User Stories* where he had three columns layed out **To do**, **In Progress**, and **Done**. User storiess worked on were moved accross as completed and in order of importance which was followed through the **milestone** created.
 
-SCREENSHOT OF PROJECT LAYOUT
+![GitHub Project Layout](static/images/github-project-layout.png)
 
 Overall, 27 issues were identified. They were further broken down into 142 *tasks*. Once labelled, 16 issues/user stories were identified as **Must-have** in order for the web application to be released with minimum requirements. The remaining 11 issues were a mixture of the other three categories. The 16 *Must-have issues* consisted of 80 *tasks* while the remaining tasks totalled 62 *tasks* which means that *must-have* issues do not exceed the **60%** since *Agile Timeboxing Approach* is used. 
 
@@ -80,11 +84,11 @@ Overall, 27 issues were identified. They were further broken down into 142 *task
 
 The style of writing was decided through **Google Fonts**. The main writing is kept thin for a cleaner, more elegent style while the headings style was thicker.
 
-SCREENSHOT OF GOOGLE FONTS
+![Google fonts chosen style](static/images/google-fonts-style.png)
 
 The main theme colors were chosen on [coolors.co](https://coolors.co/palette/a08219-b08f1b-e8bd21-eece59-f4de90-a3d590-75c059-46ab21-36821b-265815) in order to find colours which work together very well and hence, provide a better visual experience for site users.
 
-SCREENSHOT OF COOLERS
+![Main color theme chosen](static/images/coolors-color-theme.png)
 
 **Bootstrap** is used to design the overall strucuture of the website on screens of all sizes. 
 [startbootstrap.com](https://startbootstrap.com/previews/landing-page) was used to choose the main strucuture of this golf web app. The link above is linked with the specific theme used for this project. 
@@ -101,63 +105,63 @@ SCREENSHOT OF COOLERS
 
 The landing page has taken most of its strucuture from the *bootstrap theme* viewable via the link above and the content included in terms of importance. 
 
-SCREENSHOT OF LANDING SKETCH
+![Landing page sketch](static/images/landing-page-sketch.jpg)
 
 **2. Review Page** 
 
 If user clicks on one of the reviews within the landing, how the overall review is strucutured on its separate html page.
 
-SCREENSHOT OF REVIEW PAGE
+![Review page sketch](static/images/review-page-sketch.jpg)
 
 **3. View Bookings Page**
 
 When the user clicks on bookings within the nav bar, what the structure of this page would look like.
 
-SCREENSHOT OF VIEW BOOKINGS
+![View bookings page sketch](static/images/bookings-page-sketch.jpg)
 
 **4. View Profile Page**
 
 When the user clicks on Profile within the nav bar, what the profile page strucuture would look like.
 
-SCREENSHOT OF VIEW PROFILE PAGE
+![View profile page sketch](static/images/profile-page-sketch.jpg)
 
 **5. Add booking, update_booking, create_profile, update_profile pages**
 
 All of the above pages will consist of forms created through applications so therefore, different forms but same styling.
 
-SCREENSHOT OF ADD BOOKING....PAGE
+![Custom form html page sketches](static/images/form-page-styling.jpg)
 
 **6. Delete Booking page**
 
 Instead of automatically deleting a booking, this page will work as defense to ensure the user wants this CRUD funcitonality to proceed, as it cannot be reversed. 
 
-SCREENSHOT OF DELETE PAGE
+![Delete booking page sketch](static/images/delete-booking-page-sketch.jpg)
 
 **7. AllAuth custom Sign Up, Log In, Log Out pages**
 
 All of these html pages provided by allauth include different forms so therefore, the styling of all these can also be identical. 
 
-SCREENSHOT OF ALLAUTH 
+![AllAuth Form page sketches](static/images/allauth-template-sketch.jpg)
 
 #### **Workflow Process**
 
 The workflow process for *New Users* and *Returning Users* when interacting with the features included within this website. 
 
-SCREENSHOT OF WORKFLOW
+![App Workflow Process](static/images/workflow-sketch.jpg)
 
 #### **Project Apps and Relationships**
 
 Overall, three main applications will be built the very least while using *Django AllAuth's user model*. 
 
-SCREENSHOT OF PROJECT APPS
+![Project Apps and Relationships](static/images/project-apps-relationships-sketch.jpg)
 
 Four different models were also planned within these three applications and how they will be linked to each other. 
 
-SCREENSHOT OF EXCEL MODELS
+![Model Sketches](static/images/models-sketch.png)
 
 The **CRUD** functionality was also planned for each application. i.e. to what extent can a Site User or Admin manipulate data built from the models as shown above. 
 
-SCREENSHOT OF CRUD APPS
+![CRUD APP Function sketch](static/images/apps-crud-function-sketch.jpg)
 
 ## 2. **Features (existing)
 
@@ -183,6 +187,7 @@ If the user is not signed in, only three features are visible.
 3. **Login**
 
 SCREENSHOT OF HEADER NOT SIGNED IN
+![]()
 
 **Signed In as Site USer**
 
