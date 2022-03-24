@@ -974,37 +974,37 @@ The steps needed to take to deploy this project are as follows:
 
 **In Gitpod** - After project set up and libraries required installed to workspace.
 
-1. Create **requirements.txt** file and ensure it is **up to date** before deployment.
+**1.** Create **requirements.txt** file and ensure it is **up to date** before deployment.
 
 **In Heroku**
 
-2. Create the **Heroku app**.
+**2.** Create the **Heroku app**.
 
-3. Attach the **POSTGRES database** to the app **through *Resources* tab**.
+**3.** Attach the **POSTGRES database** to the app **through *Resources* tab**.
 
-4. Copy DATABASE_URL value which is located in the Settings Tab, click reveal Config Vars, Copy Text.
+**4.** Copy DATABASE_URL value which is located in the Settings Tab, click reveal Config Vars, Copy Text.
 
 **In Gitpod**
 
 ##### *env.py*
 
-5. Create new **env.py file** on top level directory.
+**5.** Create new **env.py file** on top level directory.
 
-6. **Import os library**.
+**6.** **Import os library**.
 
-7. Set **environment variables** to "**os.environ["DATABASE_URL"] = "Paste in Heroku DATABASE_URL Link**".
+**7.** Set **environment variables** to "**os.environ["DATABASE_URL"] = "Paste in Heroku DATABASE_URL Link**".
 
-8. Add in **secret key** - **os.environ["SECRET_KEY"] = "HighDunes own secret key"**.
+**8.** Add in **secret key** - **os.environ["SECRET_KEY"] = "HighDunes own secret key"**.
 
 **In Heroku**
 
-9. Add Secret Key to ** - **SECRET_KEY, “HighDunesSecretKey”**.
+**9.** Add Secret Key to ** - **SECRET_KEY, “HighDunesSecretKey”**.
 
 **In Gitpod**
 
 ##### *settings.py*
 
-10. Reference **env.py** like below.
+**10.** Reference **env.py** like below.
 
 **import os**
 **import dj_database_url**
@@ -1012,11 +1012,11 @@ The steps needed to take to deploy this project are as follows:
 **if os.path.isfile("env.py"):**
    **import env**
 
-11. **Remove** the insecure **secret key** and replace - links to the **SECRET_KEY variable on Heroku**
+**11.** **Remove** the insecure **secret key** and replace - links to the **SECRET_KEY variable on Heroku**
 
 **SECRET_KEY = os.environ.get('SECRET_KEY')**
 
-12. **Comment out** the old DataBases Section
+**12.** **Comment out** the old DataBases Section
 
 DATABASES = {
     'default': {
@@ -1025,31 +1025,31 @@ DATABASES = {
     }
 }
 
-13. Add **new DATABASES** Section (links to the DATATBASE_URL variable on Heroku)
+**13.** Add **new DATABASES** Section (links to the DATATBASE_URL variable on Heroku)
 
 DATABASES = {
    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
-14. In terminal, save all files using **git push** and **migrate** all data models to make they're up to date.
+**14.** In terminal, save all files using **git push** and **migrate** all data models to make they're up to date.
 
 **In Cloudinary.com**
 
-15. Copy **CLOUDINARY_URL** from **Cloudinary Dashboard**.
+**15.** Copy **CLOUDINARY_URL** from **Cloudinary Dashboard**.
 
 **In settings.py**
 
-16. Add Cloudinary URL to **env.py** **(os.environ["CLOUDINARY_URL"] = "cloudinary://************************")**.
+**16.** Add Cloudinary URL to **env.py** **(os.environ["CLOUDINARY_URL"] = "cloudinary://************************")**.
 
 **In Heroku**
 
-17. Add **Cloudinary UR** to Heroku through app **settings tab**, **Config Vars** e.g. COUDINARY_URL, cloudinary://************************
+**17.** Add **Cloudinary UR** to Heroku through app **settings tab**, **Config Vars** e.g. COUDINARY_URL, cloudinary://************************
 
-18. Add **DISABLE_COLLECTSTATIC** to Heroku **Config Vars** (temporary) (**DISABLE_COLLECTSTATIC, 1**)
+**18.** Add **DISABLE_COLLECTSTATIC** to Heroku **Config Vars** (temporary) (**DISABLE_COLLECTSTATIC, 1**)
 
 **In settings.py**
 
-19. **Add** Cloudinary Libraries to **installed apps** in settings.py.
+**19.** **Add** Cloudinary Libraries to **installed apps** in settings.py.
 
 INSTALLED_APPS = [
     …,
@@ -1059,7 +1059,7 @@ INSTALLED_APPS = [
     …,
 ]
 
-20. In **settings.py** tell django to **use cloudinary to store media and static files**.
+**20.** In **settings.py** tell django to **use cloudinary to store media and static files**.
 
 STATIC_URL = '/static/'
 
@@ -1070,11 +1070,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-21. Link file to the templates directory in Heroku (place under the BASE_DIR line).
+**21.** Link file to the templates directory in Heroku (place under the BASE_DIR line).
 
 TEMPLATES_DIR = os.path.join(BASE_DIR, **'templates'**)
 
-22. Change the templates directory to TEMPLATES_DIR (place within the TEMPLATES array).
+**22.** Change the templates directory to TEMPLATES_DIR (place within the TEMPLATES array).
 
 TEMPLATES = [
     {
@@ -1086,35 +1086,35 @@ TEMPLATES = [
     },
 ]
 
-23. Add **Heroku Hostname to ALLOWED_HOSTS**.
+**23.** Add **Heroku Hostname to ALLOWED_HOSTS**.
 
 ALLOWED_HOSTS = [**"PROJ_NAME.herokuapp.com"**, "localhost"]
 
-24. Create **3 new folders** on top level directory (**media, static, templates**).
+**24.** Create **3 new folders** on top level directory (**media, static, templates**).
 
-25. Create **procfile** on the top level directory called **Procfile**.
+**25.** Create **procfile** on the top level directory called **Procfile**.
 
 **In Procfile**
 
-26. Add the following: **web: gunicorn PROJ_NAME.wsgi**.
+**26.** Add the following: **web: gunicorn PROJ_NAME.wsgi**.
 
-27. **Git Add, Commit and Push** to save files.
+**27.** **Git Add, Commit and Push** to save files.
 
-28. Once project is complete:
+**28.** Once project is complete:
 
 - In Heroku, **config var**s, remove **DISABLE STATIC**.
 
 - In GitPod, go to **settings.py** and set **DEBUG** to **False**.
 
-29. **update requirements.txt** (pip3 freeze....).
+**29.** **update requirements.txt** (pip3 freeze....).
 
-30. Finally, **save** files again. (**Git add, commit, push**).
+**30.** Finally, **save** files again. (**Git add, commit, push**).
 
-31. In Heroku, go to the **Deploy tab** and *link* github project with Heroku app.
+**31.** In Heroku, go to the **Deploy tab** and *link* github project with Heroku app.
 
-32. Scroll to the bottom, **enable automatic deploys** for further changes.
+**32.** Scroll to the bottom, **enable automatic deploys** for further changes.
 
-33. Click on **Deploy Branch**.
+**33.** Click on **Deploy Branch**.
 
-34. Go to **Actions Tab** and monitor deployment.
+**34.** Go to **Actions Tab** and monitor deployment.
 
