@@ -70,7 +70,7 @@ def edit_booking(request, pk_id):
             messages.add_message(
                 request,
                 messages.SUCCESS,
-                'Your booking has been received and now waiting for approval.'
+                'Your update request has been received for approval.'
                 )
             return redirect('view-bookings')
 

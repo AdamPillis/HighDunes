@@ -703,6 +703,208 @@ Some automated testing has been completed on this project. This website consists
 
 While the developer is fully aware of the advantages of full automated testing, he made a decisions to test the rest of the project manually in detail as result of the **upcoming due date**.
 
+**1. Index.html features**
+
+- **Header - NavBar**
+    - **Header logo and club name** reloads index.html = **true**
+    - **Home** reloads index.html = **true**
+    - **Register** only visible if logged out = **true**
+    - **Register** only visibile if logged out = **true**
+    - **Register** loads signup.html = **true**
+    - **Login** loads login.html = **true**
+    - **LogOut** only visible if logged in = **true**
+    - **LogOut** loads logout.html = **true**
+    - **My Profile** only visible if logged in = **true**
+    - **My Profile** loads view_profile.html = **true**
+    - **My Bookings** only visible if logged in = **true**
+    - **My Bookings** loads view_bookings.html = **true**
+    - **Admin** only visible to superuser(manager) = **true**
+    - **Admin** loads view_profile.html = **true**
+
+- **Main Landing Image**
+    - zooms in page loads/reloads = **true**
+    - "Sign Up" button hover effect = **true**
+    - "Sign Up" button redirects to *signup.html* = **true**
+    - "Sign Up" button, if logged in, reloads index.html = **true**
+
+- **Review Section**
+    - 3 reviews per paginated page = **true**
+    - CSS styled like/dislike icon displayed = **true**
+    - Hover effect on *Title* = **true**
+    - Title renders review_page.html = **true**
+    - Hover effect on *Click to read more* = **true**
+    - *Click to read more* renders review_page.html = **true**
+    - "Next" button redirects to *index.html* = **true**
+    - "Next" button loads new reviews in *index.html* = **true**
+
+- **Sign Up Section**
+    - "Sign Up" button hover effect = **true**
+    - "Sign Up" button redirects to *signup.html* = **true**
+    - "Sign Up" button, if logged in, reloads index.html = **true**
+
+- **Footer Section**
+    - Icons equally positioned = **true**
+    - Icons background color match buttons = **true**
+    - Icons hover effect match anchor hover effect in terms of colour = **true**
+    - *Facebook* icon visible = **true**
+    - *Facebook* icon linked with Facebook URL = **true**
+    - Facebook URL opens in new tab = **true**
+
+    - *Twitter* icon visible = **true**
+    - *Twitter* icon linked with Twitter URL = **true**
+    - Twitter URL opens in new tab = **true**
+
+    - *Instagram* icon visible = **true**
+    - *Instagram* icon linked with Instagram URL = **true**
+    - Instagram URL opens in new tab = **true**
+
+    - *Youtube* icon visible = **true**
+    - *Youtube* icon linked with Youtube URL = **true**
+    - Youtube URL opens in new tab = **true**
+
+- **2. Register.html features**
+    - *Click here* header link hover effect = **true**
+    - *Click here* loads login.html = **true**
+    - *Username field* required = **true**
+    - *Email field* NOT required = **true**
+    - Password required and validated = **true**
+
+    - User feedback message "Successfully signed in displayed" = **true**
+    - "Sign Up" button hover effect = **true**
+    - "Sign Up" button submit allauth user form = **true**
+
+- **3. login.html features**
+    - *Sign up now* header link hover effect = **true**
+    - *Sign up now* loads signup.html = **true**
+    - *Username field* required = **true**
+    - Password required and validated = **true**
+    - Remember Me feature visible = **true**
+    - "Sign In" button hover effect = **true**
+    - "Sign In" button submits allauth user sign in form = **true**
+    - User feedback message "Successfully signed in as username" = **true**
+
+- **4. logout.html features**
+    - *Click here* link hover effect = **true**
+    - *Click here* loads index.html = **true**
+    - "Sign Out" button hover effect = **true**
+    - "Sign Out" button submits allauth user sign in form = **true**
+    - User feedback message "You have signed out" = **true**
+
+- **5. view_profile.html features**
+
+    **Without Profile**
+    - *No Profile* user message displayed = **true**
+    - *Create Profile* button displayed = **true**
+    - *Create Profile* loads update_profile.html = **true**
+    - *NO* other buttons visible = **true**
+
+    **With Profile**
+    - **Profile** displayed in card = **true**
+    - *Update Button* button displayed = **true**
+    - *Update Button* button loads update_profile.html = **true**
+    - *New Booking* button displayed = **true**
+    - *New Booking* button loads add_booking.html = **true**
+    - User feedback message "Successfully signed in as username" = **true**
+
+- **6. update_profile.html features**
+
+    This form has two automated tests, one to test all fields are required and one to ensure if correct details are entered, data is saved as expected. This html page and form are both used to **Create** and **Update** user profile. The difference is that the *Update Button* calls a different view function which uses an instance of the current user's profile.
+
+    All of the 7 form fields are validated using django forms. 
+
+    - **Update Button** button displayed = **true**
+
+    - **Update Button** hover effect = **true**
+
+    - **Update Button** overwrites existing profile data = **true**
+
+    - **User feedback** message "You're profile has been successfully updated" displayed = **true**
+
+- **7. view_bookings.html features**
+    - **New Booking** button displayed = **true**
+    - **New Booking** hover effect = **true**
+    - **New Booking** loads add_booking.html = **true**
+
+    - **Home Page** button displayed = **true**
+    - **Home Page** hover effect = **true**
+    - **Home Page** loads index.html = **true**
+
+- **8. add_booking.html features**
+
+    This form has two automated tests, one to test for number of errors which should be two given that 4 out of 6 fields are required. The other test is to ensure if correct details are entered, data is saved as expected. This html page and form are both used to **Create** and **Update** user bookings. The difference is that the *Update Booking* button calls a different view function which uses an instance of the current user's booking and finding it using it booking_id.
+
+    All of the 4 (required fields) are validated using django forms as well as the other two, if changed.
+
+    **Number of holes**: 9 or 18 = **true**
+
+    **Number of players**: 1 to 4 max = **true**
+
+    **Club Hire**: default set to false = **true**
+    
+    **Play date**: calander widget to set correct format = **true**
+
+    **Play time**: custom choices every 30 mins = **true**
+
+    **Extra requests**: optional = **true**
+
+    - **Request Now** button displayed = **true**
+    - **Request Now** button hover effect = **true**
+    - **Request Now** button submits booking form = **true**
+    - **Request Now** button reloads view_bookings.html = **true**
+
+    - **User feedback** message "Your booking has been created and now waiting for approval." displayed = **true**
+    - **User feedback** message "Your booking for ..... at ... is awaiting for approval. Please check back later." displayed = **true** 
+
+    **Booking "Confirmed" by superuser"**
+    - **Booking Details** appear in a card = **true**
+    - **Profile Details** autofill personal details = **true**
+    - **Update** button appear in a card = **true**
+    - **Update** button loads add_booking.html with instance data form = **true**
+    - **Request Now** overwrites data and booking_status set to False = **true**
+    - **User feedback** message "Your update request has been received for approval." displayed = **true**
+
+    - **Delete** button appear in a card = **true**
+    - **Delete** button loads delete_booking.html = **true**
+
+- **9. delete_booking.html features**
+
+    - **Warning Message** includes first name, date and time of booking = **true**
+
+    - **Submit** button displayed = **true**
+    - **Submit** button hover effect = **true**
+    - **Submit** button submits delete request = **true**
+    - **Submit** button reloads view_bookings.html = **true**
+    - **User feedback** message "Your booking has been deleted." displayed = **true**
+
+    - **Cancel** button displayed = **true**
+    - **Cancel** button hover effect = **true**
+    - **Cancel** button reloads view_bookings.html = **true**
+
+- **10. review_page.html features**
+    - **Review Details** displayed with no errors = **true**
+
+    **IF LOGGED IN**
+    - **Thumbs Up** icon counter increments by 1 if user clicks = **true**
+    - **Thumbs Up** icon counter decrements by 1 if user clicks twice = **true**
+
+    - **Thumbs Down** icon counter increments by 1 if user clicks = **true**
+    - **Thumbs Down** icon counter decrements by 1 if user clicks twice = **true**
+
+    - **Comment Counter** functioning correctly = **true**
+
+    - **Review comments** data displayed with no errors = **True**
+
+    **IF LOGGED IN**
+    - **Leave a comment** section visible to logged in user = **true**
+    - **username** appears and only text area visible to the user = **true**
+    - **Required** comment content = **true**
+
+    **IF COMMENTED AND SUBMITTED**
+    - **User thank you message** "Thank you for your comment." displayed = **true**
+
+    - **User feedback** message "Your comment is awaiting approval" displayed at the bottom of page = **true**
+
+    - **Back To Home** button loads index.html = **true**
 
 
 ### **Testing Responsiveness**
@@ -742,3 +944,24 @@ SCREENSHOT
 **Delete Bookings**
 
 SCREENSHOT
+
+### **Other ways of testing responsiveness and features**
+
+Multiple family members and friends were asked to test this new application on their mobile phones and overall, the only mobile identifying some margin errors was the **Samsung Galaxy S8**. Another issue discovered was the user email field within the signup.html caused the website to crash and show **500 Error** page if the user added their email as well as their username. 
+
+### **Fixed Bugs**
+
+1. The margin issue identified above was an easy fix by increasing the margin of a specific div element. The **error bug** has also been rectified as it is left optional but no longer causes an issue since the email verification method has been disabled in settings.py. 
+
+2. Throughout the project, the developer set the url path for most images within **style.css** file to style each image within one element. However, this caused some bugs when the project was deployed and the images with URLs in style.css did not load.
+The reason for this was simply that it could not load **statically** given that those *images* are custom so thereforce, image urls had to transfered to HTML image tags and styled accordingly with a new div box. This ensure that the {% load static%} would load all images with no more errors. 
+
+3. django's allauth built in calender within dateField worked perfect within the admin panel, however, it did not display identically within the BookingForm and expected the user to know the exact format. Django Forms *Date Input* widget was used within forms.py which is linked with the DateField within the BookingForm which has solved this bug.
+
+4. At the start of the project, the developer had a major issue not being able to load his custom style.css file which he then rectified by setting his **css link** and **js link** within the base.html to **url static** which solved this bug.
+
+### **Unfixed Bugs**
+
+One identified bug which has not been solved but does NOT cause any visual or error bug. The optional email field with signup.html could not be removed unless a custom form was created but to ensure no further bugs were created, the developer decided not to create one. The email field saves the email but it is not linked with the user_profile application and hence, the user will be asked to enter their email address again. To solve this, a new custom user form needs to be created which would be the next step from here but for now, it does not conflict with any other part of the application.
+
+Other than this, no other bugs or issues found have been left unsolved. 
