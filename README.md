@@ -693,39 +693,39 @@ Each section displayed as a page was tested and checked through *Mozilla Firefox
 
 **Landing Page**
 
-![Mozilla Firefox landing page]( "Mozilla Firefox landing page")
+![Mozilla Firefox landing page](static/images/firefox-landing-page.png "Mozilla Firefox landing page")
 
 **View Reviews Page**
 
-![Mozilla Firefox View Reviews page]( "Mozilla Firefox View Reviewsu page")
+![Mozilla Firefox View Reviews page](static/images/firefox-review-page.png "Mozilla Firefox View Reviewsu page")
 
 **View Profile Page**
 
-![Mozilla Firefox View Profile page]( "Mozilla Firefox View Profile page")
+![Mozilla Firefox View Profile page](static/images/firefox-profile-page.png "Mozilla Firefox View Profile page")
 
 **View Bookings**
 
-![Mozilla Firefox View Bookings page]( "Mozilla Firefox View Bookings page")
+![Mozilla Firefox View Bookings page](static/images/firefox-view-bookings-page.png "Mozilla Firefox View Bookings page")
 
 **Delete Bookings**
 
-![Mozilla Firefox Delete Bookings page]( "Mozilla Firefox Delete Bookings page")
+![Mozilla Firefox Delete Bookings page](static/images/firefox-delete-booking-page.png "Mozilla Firefox Delete Bookings page")
 
 **Register Page**
 
-![Mozilla Firefox Register page]( "Mozilla Firefox Register page")
+![Mozilla Firefox Register page](static/images/firefox-register-page.png "Mozilla Firefox Register page")
 
 **Log In Page**
 
-![Mozilla Firefox Log In page]( "Mozilla Firefox Log In page")
+![Mozilla Firefox Log In page](static/images/firefox-login-page.png "Mozilla Firefox Log In page")
 
 **Logout Page**
 
-![Mozilla Firefox Logout page]( "Mozilla Firefox Logout page")
+![Mozilla Firefox Logout page](static/images/firefox-logout-page.png "Mozilla Firefox Logout page")
 
 **Admin Page**
 
-![Mozilla Firefox admin page]( "Mozilla Firefox admin page")
+![Mozilla Firefox admin page](static/images/firefox-admin-page.png "Mozilla Firefox admin page")
 
 3. **Microsoft Edge**
 
@@ -733,39 +733,39 @@ Each section displayed as a page was tested and checked through *Microsoft Edge*
 
 **Landing Page**
 
-![Microsoft Edge landing page]( "Microsoft Edge landing page")
+![Microsoft Edge landing page](static/images/edge-landing-page.png "Microsoft Edge landing page")
 
 **View Reviews Page**
 
-![Microsoft Edge View Reviews page]( "Microsoft Edge View Reviews page")
+![Microsoft Edge View Reviews page](static/images/edge-view-reviews-page.png "Microsoft Edge View Reviews page")
 
 **View Profile Page**
 
-![Microsoft Edge View Profile page]( "Microsoft Edge View Profile page")
+![Microsoft Edge View Profile page](static/images/edge-view-profile-page.png "Microsoft Edge View Profile page")
 
 **View Bookings**
 
-![Microsoft Edge View Bookings page]( "Microsoft Edge View Bookings page")
+![Microsoft Edge View Bookings page](static/images/edge-view-bookings-page.png "Microsoft Edge View Bookings page")
 
 **Delete Bookings**
 
-![Microsoft Edge Delete Bookings page]( "Microsoft Edge Delete Bookings page")
+![Microsoft Edge Delete Bookings page](static/images/edge-delete-booking-page.png "Microsoft Edge Delete Bookings page")
 
 **Register Page**
 
-![Microsoft Edge Register page]( "Microsoft Edge Register page")
+![Microsoft Edge Register page](static/images/edge-signup-page.png "Microsoft Edge Register page")
 
 **Log In Page**
 
-![Microsoft Edge Log In page](a "Microsoft Edge Log In page")
+![Microsoft Edge Log In page](static/images/edge-login-page.png "Microsoft Edge Log In page")
 
 **Log Out Page**
 
-![Microsoft Edge Log Out page]( "Microsoft Edge Log Out page")
+![Microsoft Edge Log Out page](static/images/edge-logout-page.png "Microsoft Edge Log Out page")
 
 **Admin Page**
 
-![Microsoft Edge Admin page]( "Microsoft Edge Admin page")
+![Microsoft Edge Admin page](static/images/edge-admin-page.png "Microsoft Edge Admin page")
 
 ### **Application Features Test**
 
