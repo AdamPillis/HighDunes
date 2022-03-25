@@ -6,46 +6,46 @@
 
 ### **What is HighDunes Golf Club?**
 HighDunes Golf Club is a golf web application designed for site users to interact with one another as well as the golf club itself. Other than a minimum age requirement of 16, no other requirements are needed to make full use of all features for any potential golfer.
-HighDunes Golf Club offers.
-- Site users are given the ability to create an account with ease (only username and password required) which automatically allows them to start interacting with some features such as *responding to reviews within the landing page*.
+HighDunes Golf Club offers:
+- Site users are given the ability to create an account with ease (only **username** and **password** required) which automatically allows them to start interacting with some features such as **responding to reviews** within the landing page.
 - Create a **once-off** profile which is going to be used from there onwards to create tee bookings only within several clicks.
-- Once a profile is set up, the site user is given the ability to proceed with a booking by requesting as many as they wish within several clicks only, as long as they are signed in.
+- Once a profile is set up, the site user is given the ability to proceed with a booking by requesting as many as they wish within several clicks only, as long as they are signed in. 
 
-HighDunes Golf Club web application is an imaginary golf club i.e. it does not exist. However, the **Project Aim** was to design an interactive website to show the potential of online presence for a golf club of any size, no matter how popular it is. The developer of this application has researched smaller golf clubs and how they present themselves online, collect data and interact with their users. His findings identified a lack of strong online presence. Most clubs only offer user interactivity via social media websites rather than creating their own online presence through which they could enhance business growth and collecting data which they could use to create marketing strategies and understand their potential target market.
+HighDunes Golf Club web application is an imaginary golf club i.e. it does not actually exist. However, the **Project Aim** was to design an interactive website to show the potential of online presence for a golf club of any size, no matter how popular it is or where it is based inn Ireland as well as around the world. The developer of this application has researched smaller golf clubs and how they present themselves online, collect data and interact with their users. His findings identified a lack of strong online presence. Most clubs only offer user interactivity via social media websites rather than creating their own online presence through which they could enhance business growth and collecting data which they could use to create marketing strategies and understand their potential target market.
 
 For this reason, the developer decided to create an imaginary website which shows off the power of online presence which is becoming a **must** feature for any business with the potential of increasing business growth. 
 
 ### **How it works?**
 
 1. The landing page offers a large, appealing image and a welcome message to the user as soon as they reach the website with a *Sign Up Button* to start interacting. On average, it takes three seconds for a user to decide whether they will stay on the site or leave so this has been taken into account as a result and this landing image has almost been designed to fill full view length. The flow of the home page was designed to fulfill site user needs in order.
-- What does the golf has to offer (features with images).
-- What do other golfers say about the golf course? (reviews section).
-- If all is good, where can I sign up? (two sign up buttons on the home page).
+- What feature the golf club has to offer (**features with images**).
+- What do **other golfers** say about the golf course? (**reviews** section).
+- If all is good, where can I **sign up**? (two sign up buttons on the home page).
 
 2. Given the developers knowledge of golf, he is fully aware of what potential customers are looking for when researching a golfing site. So therefore, the landing image is followed by more photos and short paragraphs which explain the most important features that the golf club offers. The club does not need to look 5 star in reality given that photos of any quality can be resized and styled to look appealing to the eye. 
 
 3. After all of the features are explained briefly, the developer implemented an interactive section where users can view reviews and respond by liking, disliking them and even replying to them. The only requirement to start using this feature is just to create an account. No need for a profile.
 
-4. This is followed by another section where the background image represents a regular image of a golf course in style and another opportunity to *sign up as a user*.
+4. This is followed by another section where the background image represents a regular image of a golf course in style and another opportunity to **sign up as a user**.
 
-5. Once the user signs up, they are given the ability to create a profile which is only needed once and can be updated by them at any point. This can be reached via the *navigation bar* or if by mistake, they decide to book a tee time, they will be informed that a profile needs to be created before moving on. 
+5. Once the user signs up, they are given the ability to create a profile which is only needed once and can be updated by them at any point. This can be reached via the **navigation bar** or if by mistake, they decide to book a tee time, they will be informed that a profile needs to be created before moving on. 
 
-6. Profiles do not require approval, however, when it comes to making a tee time, users will need to wait for approval but users are notified of this once they submit their *tee booking request*.
+6. Profiles do not require approval, however, when it comes to making a tee time, users will need to wait for approval but users are notified of this once they submit their **tee booking request**.
 
-7. In terms of a user profile, users are only given the ability to create, view and update their profile without approval. In terms of golf bookings, they are given full **CRUD** functionality given that they can create, view, update and delete their approved tee times without contacting the golf shop. 
+7. In terms of a *user profile*, users are only given the ability to create, view and update their profile without approval. In terms of golf bookings, they are given full **CRUD** functionality given that they can **create, view, update and delete their approved tee times** without contacting the golf shop. 
 
 ### **Who is it for?**
 
-Ireland is one of the most popular golfing destinations. With over 220 golf courses and global target audience of 66 million golfers, the potential for business of a golf course of any size is big. Of course, in order to reach a global target market, online presence is almost becoming a *requirement*. International players will want to check out a particular golf they wish to play during their stay so it is important to provide them with essential features such as reviews and golf course features so they can plan ahead and request tee times with special requirements, if any. 
+Ireland is one of the most popular golfing destinations. With over 220 golf courses and global target audience of 66 million golfers, the potential for business of a golf course of any size is big. Of course, in order to reach a global target market, online presence is almost becoming a *requirement*. International players will want to check out a particular golf they wish to play during their stay so it is important to provide them with essential features such as reviews and golf course features so they can plan ahead and request tee times with special requirements, if any.
 
 **New Users**
 
-New Users are given the ability to create an account by filling in the username and password section only. Entering an email is optional. Once an account is created by the user, they can proceed to create a profile which only needs to be done **once** and does not contain more than 6 fields. Once complete, they can process and book tee times of any amount of their choice and without needed to fill out personal details again. The booking process only requires several fields to be filled in also.
-*New Users* do not need to go further than creating an account in order to start interacting with the site. They can like, dislike and comment under reviews without needing personal details. 
+New Users are given the ability to create an account by filling in the **username** and **password** section only. Entering an email is *optional*. Once an account is created by the user, they can proceed to **create a profile** which only needs to be done **once** and does not contain more than 6 fields. Once complete, they can process and book tee times of any amount of their choice and without needed to fill out personal details *again*. The booking process only requires several fields to be filled in also.
+**New Users** do not need to go further than creating an account in order to start interacting with the site. They can **like, dislike and comment** under reviews without needing personal details. 
 
 **Returning Users**
 
-As a returning user with a profile already set up, the only requirement before proceeding with a booking or checking the status of a booking is to *log in* and click on *My Bookings*. No need to go into the profile section unless they wish to update their personal details. The user only needs to click on two links and two buttons to request a tee time. 
+As a returning user with a profile already set up, the only requirement before proceeding with a booking or checking the status of a booking is to **log in** and **click on *My Bookings***. No need to go into the profile section unless they wish to update their personal details. The user only needs to click on two links and two buttons to request a tee time. 
 
 ### **Planning**
 
@@ -57,13 +57,13 @@ The developer used an Agile Approach to start the planning process. **EPIC** Use
 
 Some of these *Epic User Stories* are quite extensive in terms of workload in comparison to one another. Therefore, the developer broke some of these larger epic user stories to smaller user stories in order to be able to plan further and estimate the possible length of time, the project will take altogether. 
 
-On GitHub, he created a new *Issue Template* through which he can break and create each epic user story into smaller user stories i.e. issues. The 21 epics as shown above, have been broken down into 27 different user stories. 
+On GitHub, he created a new ***Issue Template*** through which he can break and create each epic user story into smaller user stories i.e. issues. The 21 epics as shown above, have been broken down into **27** different user stories. 
 
-One Agile Tool used was to break these user stories down further. **Acceptance Criteria** and **Tasks** were added to each of these user stories to realise the workload of each and what is expected from each user story. One example is shown below.
+One *Agile Tool* used was to break these user stories down further. **Acceptance Criteria** and **Tasks** were added to each of these user stories to realise the workload of each and what is expected from each user story. *One example is shown below*.
 
 ![Full User Story, Acceptance Criteria and Tasks](static/images/acceptance-criteria-tasks.png) 
 
-Another Agile tool used to proceed with these issues was to implement the **MOSCOW Prioratization** and split these User Stories into 4 categories. *Must-have*, *Should-have*, *Could-have* and *Would-have* issues. A *label* for each was created and each issue was labelled in order of importance.
+Another **Agile tool** used to proceed with these issues was to implement the **MOSCOW Prioratization** and split these User Stories into 4 categories. *Must-have*, *Should-have*, *Could-have* and *Would-have* issues. A **label** for each was created and each issue was labelled in order of importance.
 A **Milestone** called *HighDunes Golf Club* was then created where the developer prioratized the user stories in order of importance which offered a clean direction in terms of the overall, project workflow.
 
 **Milestone Start of Project**
@@ -145,17 +145,17 @@ All of these html pages provided by allauth include different forms so therefore
 
 #### **Workflow Process**
 
-The workflow process for *New Users* and *Returning Users* when interacting with the features included within this website. 
+The workflow process for **New Users** and **Returning Users** when interacting with the features included within this website. 
 
 ![App Workflow Process](static/images/workflow-sketch.jpg)
 
 #### **Project Apps and Relationships**
 
-Overall, three main applications will be built the very least while using *Django AllAuth's user model*. 
+Overall, **three main applications** were built the very least while using *Django AllAuth's user model* also. 
 
 ![Project Apps and Relationships](static/images/project-apps-relationships-sketch.jpg)
 
-Four different models were also planned within these three applications and how they will be linked to each other. 
+**Four different models** were also planned within these three applications and how they will be linked to each other. 
 
 ![Model Sketches](static/images/models-sketch.png)
 
@@ -163,11 +163,11 @@ The **CRUD** functionality was also planned for each application. i.e. to what e
 
 ![CRUD APP Function sketch](static/images/apps-crud-function-sketch.jpg)
 
-## 2. **Features (existing)
+## 2. **Features (existing)**
 
-In terms of text use for interacting with users on the website, each paragraph was written as it was directed to a specific user so that they feel included and nothing sounds too form to keep their mood and website atmosphere warm overall. 
+In terms of text use for interacting with users on the website, each text content was written as it was directed to a specific user so that they feel included and nothing sounds too form to keep their mood and website atmosphere warm overall. Eye attractive content which is kept short followed by a question directed to the **user** to maintain good *interactivity*.
 
-All of the *button* throughout all html pages are styled and colored consistenly for enhanced visual look from a user point of view.
+All of the **buttons** throughout all of the html pages are styled and colored consistenly for enhanced visual look from a user point of view which includes **padding, background color, hover effect and text color**.
 
 The background color of each html page is also kept identical. 
 
@@ -175,8 +175,11 @@ The background color of each html page is also kept identical.
 
 #### **Header**
 
-The header will be included within the base.html page which is going to be included within every html page and its style will also be set to sticky mode so that it follows the user to prevent from having to scroll up to the top of the page to access a feature within the nav bar.
-It contains the golf club *logo style* while it takes up small space to allow other sections to stand out. When screen size reaches medium, the nav bar list elements are automated into a dropdown box to enhance UX design on smaller screen sizes and maintain size of header. The nav bar list elements consist of vital application urls.
+The header will be included within the base.html page which is going to be included within every html page and its style will also be set to **sticky** mode so that it follows the user to prevent from having to scroll up to the top of the page to access a feature within the nav bar.
+
+It contains the golf club *logo style* while it takes up small space to allow other sections to stand out. When screen size reaches medium, the nav bar list elements are automated into a dropdown box to enhance UX design on smaller screen sizes and maintain size of header. The nav bar list elements consist of vital application urls. 
+
+Normally speaking, like the developer, most **users** would almost expect a website logo to **reload the home page** so to keep these type of users satisfied with this application, the **golf club name** and **logo** is a link to the home page which always follows the *user*.
 
 **Not Signed In**
 
@@ -190,7 +193,7 @@ If the user is not signed in, only three features are visible.
 
 **Signed In as Site USer**
 
-If the user is signed in, list elements visible change, apart from the *Home Tab*. The nav elements are named from the user point of view and hence, **My** is placed before profile and bookings. 
+If the user is signed in, list elements visible change, apart from the ***Home Tab***. The nav elements are named from the user point of view and hence, **My** is placed before profile and bookings. 
 
 1. **Home**
 2. **Logout**
@@ -201,7 +204,7 @@ If the user is signed in, list elements visible change, apart from the *Home Tab
 
 **Signed In as Admin**
 
-If signed in as Admin, an additional element is visible as well as the above which provides the superuser with access to the admin panel where they can fully control all of their users, profiles, reviews, comments and bookings.
+If signed in as Admin, an additional element is visible as well as the above which provides the **superuser** with access to the **admin panel** where they can **fully control** all of their **users, profiles, reviews, comments and bookings**.
 
 5. **Admin**
 
@@ -209,9 +212,9 @@ If signed in as Admin, an additional element is visible as well as the above whi
 
 #### **Landing Page Image and message**
 
-The size of the landing image is almost 100VH and its main aim is to catch the attention of any site visitor within the first three seconds as mentioned within the planning process above. The colours within the image blend in with the overall colours used for the website and in terms of quality, it also stands out on all screen sizes.
+The size of the landing image is almost 100VH and its main aim is to catch the attention of any site visitor within the **first three seconds** as mentioned within the planning process above. The colours within the image blend in with the overall colours used for the website and in terms of quality, it also stands out on all screen sizes and would excite a golfer, likewise.
 
-A warm welcome message is displayed within the image to start communicating with all site users. The new site user is told that the sign up process will not take long. The golf club's age requirement is also explained while a stylish **Sign In** button is placed underneath to prevent a user from having to look around for a sign in option. Of course, as a returning user, they will be aware that the *all features can be reached via the nav bar*.
+A ***warm welcome message*** is displayed within the image to start communicating with all site users. The new site user is told that the sign up process will not take long. The golf club's age requirement is also explained while a stylish **Sign In** button is placed underneath to prevent a user from having to look around for a sign in option. Of course, as a **returning user**, they will be aware that the ***all features can be reached via the nav bar***.
 
 ![Main Landing Image](static/images/landing-image.png)
 
@@ -223,7 +226,7 @@ The features sections consists of three parts/golf club features which can look 
 2. **Golf Buggies**
 3. **Halfway House**
 
-Most of the time, these three features alone can answer the first several questions of any golfer regarding a golf course which is why they were chosen. Short paragraphs explain each in details so users don't have to read *too much* while the images above each text are styled elegantly. The header of each part was also worded so that golfers don't need to the paragraphs underneath in order to understand what is available. 
+Most of the time, these three features *alone* can answer the first several questions of **any** golfer regarding a golf course which is why they were chosen. Short paragraphs explain each in details so users don't have to read *too much* while the images above each text are styled elegantly. The header of each part was also worded so that golfers don't need to *read* the paragraphs underneath in order to understand what is available and they're on the website for a short visit.
 
 ![Three Features Section](static/images/features-section.png)
 
@@ -249,60 +252,60 @@ Again, the headings were chosen so that the paragraphs underneath do not have to
 
 The heading of this section also demonstrates how the website interacts with each user as if it was a **one to one** conversation.
 
-This section lists three reviews per page and displays most of the data for each review. A signed in user has the ability to like or dislike a review which is not a feature available through the landing page but the number of likes and dislikes are displayed so that the user is aware what golfers agree with and what they disagree with i.e. what to look out for without needing to click on a review.
+This section lists **three reviews per page** and displays most of the data for each review. A signed in user has the ability to **like** or **dislike** a review which is not a feature available through the landing page but the number of likes and dislikes are displayed so that the user is aware what golfers agree with and what they disagree with i.e. what to look out for without needing to click on a review.
 
 ![Reviews section](static/images/review-section.png)
 
 #### **Sign Up Section**
 
-This section contains an image of a golfer playing an ordinary golf course, yet still appealing to the eye. A text box directly aiming at the site user is also displayed, making a statement and also asking them a question with a possible answer of **Signing Up**. Hence, a button is provided which is linked with the sign up html page. 
+This section contains an image of a golfer playing an ordinary golf course, yet still appealing to the eye. A text box directly aiming at the site user is also displayed, making a statement and also asking them a question with a possible answer of **Signing Up**. Hence, a button is provided which is linked with the **sign up html** page. 
 
 ![Sign Up section](static/images/signup-section.png)
 
 #### **Footer**
 
-The footer is included within **base.html** to ensure that the user has access to all of the clubs social media sites and to mainain consistency through all html pages as well as the header with the nav bar. 
+The footer is included within **base.html** to ensure that the user has access to all of the clubs social media sites and to mainain consistency through **all html pages** as well as the header with the nav bar. 
 
-The background color of the icons match the color of the buttons for more consistency. 
+The **background color** of the **icons match** the color of the buttons for more consistency. 
 
 ![Footer in all html pages](static/images/footer-section.png)
 
 ### 2. **Review Page**
 
-The review page appears when a user clicks on a specific review within the landing page. This page displays all of the review details.
+The review page appears when a user **clicks** on a specific review within the landing page. This page displays all of the review details.
 
 The base.html is extended. The style of image and review title is identical for every review.
-Within this page, the user is given the ability to interact with the review by liking, unliking, reviewing comments and even leaving a comment themselves if they so wish. 
+Within this page, the user **is given the ability** to interact with the review by **liking, unliking, reviewing comments** and even **leaving a comment** themselves if they so wish. 
 
-The number of likes, dislikes and comments are also displayed within each review.
+The number of likes, dislikes and comments are also **displayed** within each review.
 
-A back to home **button** is placed at the bottom of the page so the user can exit back to the landing page without needing to *click to go back*.
+A back to home **button** is placed at the bottom of the page so the user can exit back to the landing page without needing to *click to go back*. The idea was late and arose from a user perspective "**What would I do after commenting on a review?**".
 
 **Not Signed In**
 
-If the user is not logged in, they have no access to any of the interactive features. The user can only view the review in detail.
+If the user is **not** logged in, they have no access to any of the interactive features. The user can only *view the review in detail*.
 
 ![Review page when user is logged out](static/images/review-page-logged-out.png)
 
 **Signed In**
 
-If the user is *signed in*, they have full access to all of the features within each review. The like and dislike icons change style to colors *red* and *green* which they can click once to add or twice to remove. 
+If the user is *signed in*, they have full access to all of the features within each review. The like and dislike icons change style to colors **red** and **green** which they can **click** once to *add* or twice to *remove*. 
 
-The **leave a comment** feature also comes available to the user so they can just enter their comment. Their username is taken automatically and once submitted, they receive two messages. One at the bottom to make them aware that their "*comment is awaiting approval*" and one at the top to ensure they are aware their "*comment has been received and will be displayed once approved by the admin*".
+The **leave a comment** feature also comes available to the user so they can just enter their comment. Their username is taken automatically and once submitted, they receive **two messages**. One at the bottom to make them aware that their "**comment is awaiting approval**" and one at the top to ensure they are aware their "**comment has been received and will be displayed once approved by the admin**".
 
-If the user logged in is the **superuser**, then the need to approve the comment is lifted and the manager of HighDunes Golf Club can freely leave comments of their choice without approval required. 
+If the user logged in is the **superuser**, then the need to approve the comment is *lifted* and the manager of HighDunes Golf Club can freely leave comments of their choice without approval required. 
 
 ![Review page when user is logged in](static/images/review-page-logged-in.png)
 
 ### 3. **Profile Page**
 
-This page or feature can only be accessed by users who have successfully registered or logged in via **My Profile** in the nav bar. Once a profile is created, it is presented using **Bootstrap cards**. 
+This page or feature can only be accessed by users who have successfully registered or logged in and *clicked on* **My Profile** in the nav bar. Once a profile is created, it is presented using **Bootstrap cards**. 
 
 An image is placed at the bottom at full width size on all screen sizes to bring in some style to the page while representing the main theme of the website i.e **golf**.
 
 **Without Profile Created**
 
-If the user is new to the website and just finished registering, they would not have a profile set up yet. Therefore, a message is displayed letting them know that "*A Profile does not exist for them*". The one requirement which is the minimum age is again highlighted.
+If the user is new to the website and just finished registering, they would not have a profile set up yet. Therefore, a message is displayed letting them know that **"*A Profile does not exist for them*"**. The one requirement which is the minimum age is again *highlighted*.
 
 A **Create Profile** button is presented underneath the above text for them to click on which takes them to the *add_profile page* where they can create their profile.
 
@@ -310,7 +313,7 @@ A **Create Profile** button is presented underneath the above text for them to c
 
 **With Profile Created**
 
-If the user is a returning user or has just created their profile, their profile details are displayed within a *bootstrap card* which is styled and two new buttons appear underneath their profile details. Looking at it from a site user's point of view, the following two buttons cover what the user would possibly like to do from this point i.e. *update their profile* or *make a booking*.
+If the user is a returning user or has just created their profile, their profile details are displayed within a *bootstrap card* which is styled and two new buttons appear underneath their profile details. Looking at it from a **site user's point of view**, the following *two buttons* cover what the user would possibly like to do from this point i.e. **update their profile** or **make a booking**.
 
 **Update Profile**: Takes the user to the "*edit_profile*" page where they can update their profile data model.
 
@@ -322,11 +325,11 @@ The full width image at the bottom but above the footer is there to improve the 
 
 ### 4. **Booking Page**
 
-This is the page where all user bookings are listed and full CRUD functionality is available to the user. The image and title at the top of the page is almost identical to the *review page* design for consistency as well as the image just above the footer and they both shrink and change design as the screen size gets smaller.
+This is the page where all user bookings are listed and **full CRUD functionality** is *available to the user*. The image and title at the top of the page is almost identical to the *review page* design for consistency as well as the image just above the footer and they both shrink and change design as the screen size gets smaller.
 
 **Without Profile Created**
 
-Without a booking created, the user is presented with a feedback message that states *The user needs to create a profile before proceeding with a booking. The *New Booking* button is hidden and the user's only option is to create a profile first before interacting further.
+Without a booking created, the user is presented with a **feedback message** that states *The user needs to create a profile before proceeding with a booking. The **New Booking** button is hidden and the user's only option is to create a profile first before interacting further.
 
 ![Booking page with no profile](static/images/booking-page-no-profile.png)
 
@@ -338,11 +341,11 @@ Once the user has created a profile, the **New Booking** button appears and allo
 
 **With Profile, one confirmed booking and one waiting for approval**
 
-Once a booking is complete and the user submits the form, the response they are given is through a django message which appears at the top of the page "*Your booking has been received and is waiting for approval*".
+Once a booking is complete and the user submits the form, the response they are given is through a django message which appears at the top of the page "***Your booking has been received and is waiting for approval***".
 
-Once the superuser approves the booking, the booking details appear to the user with **Confirmed** at the very top. **Two** buttons are presented to the user to allow them to use the other two of the CRUD functionality which is to:
+Once the superuser *approves* the booking, the booking details appear to the user with **Confirmed** at the very top. **Two** buttons are presented to the user to allow them to use the other two of the CRUD functionality which is to:
 
-**Update**: Takes the user to edit_booking page where an instance of their booking appears within a preset form and they can update it as they wish. Of course, when the user submits, the booking_status automatically changes to Pending and will need superuser approval again. 
+**Update**: Takes the user to *edit_booking* page where an instance of their booking appears within a preset form and they can update it as they wish. Of course, when the user submits, the **booking_status** automatically changes to Pending and will need superuser approval again. 
 
 **Delete**: Takes the user to the *delete_booking.html* which acts as a form of defense to ensure the user wants to delete data from the database. This is necessary because once the data is deleted, it cannot be returned. 
 
@@ -350,9 +353,9 @@ Once the superuser approves the booking, the booking details appear to the user 
 
 ### 5. **Delete_booking Page**
 
-This html page was created to ensure that the user wants to complete the last section of the CRUD functions i.e. the last step. Once it is deleted, it cannot be returned so therefore, the user is prevented from achieving this with one click but instead, they're taken to this page where a final warning question appears which states the **date** and **time** of the game booked.
+This html page was created to *ensure* that the user wants to complete the last section of the CRUD functions i.e. the last step which is to **delete**. Once it is deleted, it cannot be returned so therefore, the user is prevented from achieving this with *one click* but instead, they're taken to this page where a final warning question appears which states the **date** and **time** of the game booked.
 
-**Submit Button**: Completes the final step of CRUD. Deletes the booking for good and cannot be reversed. Once the clicked, the *view_bookings page* is updated, refreshed and the user is returned here while a feedback message appears at the top to confirm *The booking has been deleted*. 
+**Submit Button**: Completes the final step of CRUD. *Deletes the booking* for good and cannot be **reversed**. Once the *clicked*, the *view_bookings page* is updated, refreshed and the user is returned here while a **feedback message** appears at the top to confirm *The booking has been deleted*. 
 
 **Cancel**: Returns the user to the *view_bookings page* without deleting the booking. 
 
@@ -360,41 +363,41 @@ This html page was created to ensure that the user wants to complete the last se
 
 ### 6. **Custom created Form Pages**
 
-All of the custom created form pages below are listed together because they are all designed almost identically to maintain consistency of custom form presentation and display. The *buttons* displayed in all of these pages are also identical.
+All of the custom created form pages below are listed together because they are all designed almost identically to maintain consistency of custom form presentation and display. The **buttons** displayed in all of these pages are also identical.
 
 **add_booking.html**
 
-This html page is used to display the form created within forms.py of the *golf_booking application*. Given that the user has filled in their profile, profile model data is used to autofill personal details within views.py and only essential questions are asked to reduced the length of time it takes the potential customer to book a tee time.
+This html page is used to display the form created within forms.py of the *golf_booking application*. Given that the user has filled in their profile, the profile model data is used to **autofill** *personal details* within views.py and only essential questions are asked to reduced the length of time it takes the potential customer to book a tee time.
 
-Out of the six fields provided, only four are required which are basically dropdown options to enhance user interaction by not asking them to type unless they have something additional to request within *extra requests* or if they wish to hire clubs, just simply *tick the box*.
+Out of the six fields provided, only four are required which are **basically dropdown** options to **enhance user interaction** by not asking them to type unless they have something additional to request within *extra requests* or if they wish to hire clubs, just simply *tick the box*.
 
 ![Add new booking page](static/images/add-booking-form.png)
 
-**update booking** Called from **view_bookings.html** - **Update Button** the same add_booking.html page is used with the booking form but instead, using the booking ID and user details logged in, it creates an instance of the user booking details which the user can change as they wish. The booking status is changed to "Pending" once again once the submit button is clicked.
+**update booking** Called from **view_bookings.html** - **Update Button** the same add_booking.html page is used with the booking form but instead, using the booking ID and user details logged in, it creates an **instance** of the user booking details which the user can change as they wish. The booking status is changed to "Pending" once again once the submit button is clicked.
 
 ![Update booking page](static/images/update-booking-form.png)
 
 **create profile**
 
-When a user creates an allauth account, an empty profile is created for them through *signals.py*. Within forms.py, a custom form is created to represent the profile data model with essential personal details. Every field is required to ensure that the user experience is maintained high and prevent the website from crashing if a field is left blank i.e. directly linked with bookings which requires personal details to function correctly. 
+When a user creates an allauth account, an *empty profile* is created for them through *signals.py*. Within forms.py, a custom form is created to represent the profile data model with essential personal details. Every field is required to ensure that the user experience is maintained high and prevent the website from crashing if a field is left blank i.e. directly linked with bookings which requires personal details to function correctly. 
 
-The html page used to render this form is update_profile.html
+The html page used to render this form is *update_profile.html*.
 
 ![Create profile form page](static/images/create-profile-form.png)
 
 **update profile**
 
-The update_profile.html is used again to display this feature to the user for consistency. An instance of the logged in users profile is created within the form instead which the user can update and submit without needing approval and the changes are automatically updated and visible within the *view_profile page*.
+The update_profile.html is used again to display this feature to the user for consistency. An *instance of the logged in users profile *is created within the form instead which the user can update and submit without needing approval and the changes are automatically updated and visible within the *view_profile page*.
 
 ![Update profile form page](static/images/update-profile-form.png)
 
 ### 6. **AllAuth Form Pages**
 
-All of the allauth form pages are designed and styled almost identically for better user experience. Buttons are styled identically again with an image displayed just abover the footer to keep the overall UX design style.
+All of the allauth form pages are designed and styled **almost identically** for better user experience. Buttons are styled identically again with an image displayed just abover the footer to keep the overall UX design style.
 
 **Sign Up Page**
 
-Only consists four fields of which only three is required. Of course looking at it from a user's point of view, they may click here by mistake so a **click here** is created at the top of the form which is liked with the *log in page*.
+Only consists *four fields* of which *only three is required*. Of course looking at it from a user's point of view, they may click here by mistake so a **click here** is created at the top of the form which is liked with the ***log in page***.
 
 The new user only needs to provide a username and a strong password which is validated through AllAuth.
 
@@ -432,15 +435,15 @@ As the developer progressed with this project, he discovered lots of new potenti
 
 - Make the email field within AllAuth signup.html required and use to implement new features such as **Confirm Email** and use it to **Change Password** and hence, design these features to match the main theme. 
 
-- Allow users to create reviews using the review model or import reviews from other sites like social media sites, Tripadvisor or golf course pages. The section provided for the reviews could be used for this feature while keeping other user interactive features such as like, dislike and reply.
+- Allow users to **create reviews** using the review model or **import reviews** from other sites like social media sites, Tripadvisor or golf course pages. The section provided for the reviews could be used for this feature while keeping other user interactive features such as like, dislike and reply.
 
-- For now, the golf clubs booking system is manual and the golf shop needs to manually approve bookings but the next update could implement a new *Application* in which a daily tee sheet is created within models.py for each day. This application would be directly linked with the *golf_bookings* application and all of its data would be used within the new application. Given that the new daily tee sheet model will contain dates and time slots, this can be linked with the date and time fields of each booking. Number of available clubs, buggies available for the day could also be implemented so that bookings can automatically be confirmed and the time booked cannot be booked twice. For now, the time slots differ by 30 minutes to give space for double, even triple bookings if needed. This is definitely a potential feature which will now be planned by the developer and included in the future. 
+- For now, the golf clubs booking system is *manual* and the golf shop needs to manually approve bookings but the next update could implement a new *Application* in which a daily tee sheet is created within models.py for each day. This application would be directly linked with the *golf_bookings* application and all of its data would be used within the new application. Given that the new daily tee sheet model will contain dates and time slots, this can be linked with the date and time fields of each booking. Number of available clubs, buggies available for the day could also be implemented so that bookings can automatically be confirmed and the time booked cannot be booked twice. For now, the time slots differ by 30 minutes to give space for double, even triple bookings if needed. This is definitely a potential feature which will now be planned by the developer and included in the future. 
 
 - Include an **image gallery**, **halfway house menu**, **google maps to show the location of the course**, information regarding the **golf pro** and an about section for the **Golf Club itself**.
 
 - Search field at the top of the landing page so the user can search for specific features within the website.
 
-- Include some live features such as a video imported from *Youtube* which shows the layout of the course, given that the golf course has a video of their course on 'Youtube'.
+- Include some **live features** such as a video imported from ***Youtube*** which shows the layout of the course, given that the golf course has a video of their course on 'Youtube'.
 
 ## 3. Testing and Bugs Fixed/Unfixed
 
@@ -499,6 +502,7 @@ All of the testing below was done through the source code of each page on the **
 **Validating CSS file**
 
 [https://validator.w3.org/](https://jigsaw.w3.org/css-validator/) is used to test CSS files and their code to ensure high coding standards.
+
 Only one css file within this project which is located in *static/css/styles.css*
 
 **style.css**
@@ -552,7 +556,7 @@ Testing every custom python file within this application.
 
 2. #### golf_booking Application
 
-Testing every custom python file within this application.
+Testing every custom python file within golf_booking application.
 
 **admin.py**
 
@@ -584,7 +588,7 @@ Testing every custom python file within this application.
 
 3. #### user_profile Application
 
-Testing every custom python file within this application.
+Testing every custom python file within user_profile application.
 
 **admin.py**
 
@@ -622,9 +626,9 @@ Testing every custom python file within this application.
 
 ![views.py validation](static/images/profile-views.py-validation.png)
 
-4. #### highdunes Application
+4. #### highdunes Project
 
-Testing files with some custom python code within main project
+Testing files with some custom python code within main project itself.
 
 **urls.py**
 
@@ -689,7 +693,7 @@ This project was tested through three several search engines including Google Ch
 
 2. **Mozilla Firefox**
 
-Each section displayed as a page was tested and checked through *Mozilla Firefox* and no issues detected.
+Each section displayed as a page was tested and checked through ***Mozilla Firefox*** and no issues detected.
 
 **Landing Page**
 
@@ -729,7 +733,7 @@ Each section displayed as a page was tested and checked through *Mozilla Firefox
 
 3. **Microsoft Edge**
 
-Each section displayed as a page was tested and checked through *Microsoft Edge* and no issues detected.
+Each section displayed as a page was tested and checked through ***Microsoft Edge*** and no issues detected.
 
 **Landing Page**
 
@@ -1320,11 +1324,15 @@ Also had to replace the css image urls with html img tages so stack overflow als
 - Inspiration for hiding and displaying sections using JavaScript realised by talking to others in **#Portfolio 4** group chat.
 
 #### **YouTube**
-- This video web application also helped to learn about automated testing and how to implement it.
+- This video web application also helped to learn about automated testing and CRUD functionality and how to implement it.
 
-**Youtube channel**: The Dumbfounds
+**Youtube channel**: The Dumbfounds - **Automated Testing**
 
 [https://www.youtube.com/watch?v=28zdhLPZ1Zk](https://www.youtube.com/watch?v=28zdhLPZ1Zk)
+
+**Youtube channel**: Dennis Ivy - **CRUD functions**
+
+[https://www.youtube.com/watch?v=EX6Tt-ZW0so](https://www.youtube.com/watch?v=EX6Tt-ZW0so)
 
 #### **Code Institute Project 4 study material**
 
