@@ -1213,3 +1213,127 @@ ALLOWED_HOSTS = [**"PROJ_NAME.herokuapp.com"**, "localhost"]
 
 **34.** Go to **Actions Tab** and monitor deployment.
 
+## 5. Credits
+
+### **Content**
+
+#### **Images**
+
+**Main Landing Image**
+
+**owner** = Doonbeg Golf Course
+
+**Link**: [https://gngcd-qnewmedia2.netdna-ssl.com/assets/img/doonbeg/gallery/3.jpg?v3](https://gngcd-qnewmedia2.netdna-ssl.com/assets/img/doonbeg/gallery/3.jpg?v3)
+
+**view_reviews and view_bookings image**
+
+**owner** = Pixabay
+
+**Link**: [https://pixabay.com/photos/golf-golfed-sunset-sports-golfer-787826/](https://pixabay.com/photos/golf-golfed-sunset-sports-golfer-787826/)
+
+**view_profile and view_bookings image**
+
+**owner** = Harisonburg Golf Course in Images Squarespace
+
+**Link**: [https://images.squarespace-cdn.com/content/v1/529f760ae4b0dfa4e475bf47/1554506235287-V6J9M1ZWUHT6NTW6G14H/golf-courses-in-harrisonburg-va-1500x609.jpg?format=2500w](https://images.squarespace-cdn.com/content/v1/529f760ae4b0dfa4e475bf47/1554506235287-V6J9M1ZWUHT6NTW6G14H/golf-courses-in-harrisonburg-va-1500x609.jpg?format=2500w)
+
+**add/update profile and add/update booking**
+
+**owner** = Your Irish Adventure
+
+**Link**: [https://youririshadventure.com/wp-content/uploads/2020/07/golf-courses-in-ireland-1.jpg](https://youririshadventure.com/wp-content/uploads/2020/07/golf-courses-in-ireland-1.jpg)
+
+**signup.html and login/logout.html Image**
+
+**owner** = Palmares Ocean Living & Golf Resort in Lagos (subject to copyright)
+
+**Link**: [https://palmaresliving.com/golf-course/](https://palmaresliving.com/golf-course/)
+
+**Clubhire Image**
+
+**owner** = Cargest, Malaga (ALL SUBJECT TO COPYRIGHT)
+
+**Link**: [https://www.cargest.com/wp-content/uploads/2021/09/malaga-golf-club-hire.webp](https://www.cargest.com/wp-content/uploads/2021/09/malaga-golf-club-hire.webp)
+
+**Buggies Image**
+
+**owner** = Real Irish Golf
+
+**Link**: [https://www.realirishgolf.com/wp-content/uploads/2018/11/golf-cart.jpg](https://www.realirishgolf.com/wp-content/uploads/2018/11/golf-cart.jpg)
+
+**Halfway House Image**
+
+**owner** =  DepositPhotos
+
+**Link**: [https://st3.depositphotos.com/6759912/12521/i/450/depositphotos_125214068-stock-photo-hot-dog-with-cold-beer.jpg](https://st3.depositphotos.com/6759912/12521/i/450/depositphotos_125214068-stock-photo-hot-dog-with-cold-beer.jpg)
+
+**Driving Range Image**
+
+**owner** =  Hartford golf Club
+
+**Link**: [https://images.squarespace-cdn.com/content/v1/59b437c303596ecddfefb87d/1513201484513-UNNMFG98PYVFTWSQKKKX/DSC01539.JPG](https://images.squarespace-cdn.com/content/v1/59b437c303596ecddfefb87d/1513201484513-UNNMFG98PYVFTWSQKKKX/DSC01539.JPG)
+
+**Twilight Image**
+
+**owner** =  Static Flicker
+
+**Link**: [https://live.staticflickr.com/1229/5105065871_e6ffdf2a56_b.jpg](https://live.staticflickr.com/1229/5105065871_e6ffdf2a56_b.jpg)
+
+**Course Layout Image**
+
+**owner** =  Golf Digest
+
+**Link**: [https://golfdigest.sports.sndimg.com/content/dam/images/golfdigest/fullset/2021/10/congressional%20renovated%20photos%20%20%20%20.jpg.rend.hgtvcom.966.725.suffix/1635163082705.jpeg](https://golfdigest.sports.sndimg.com/content/dam/images/golfdigest/fullset/2021/10/congressional%20renovated%20photos%20%20%20%20.jpg.rend.hgtvcom.966.725.suffix/1635163082705.jpeg)
+
+**Register section Image**
+
+**owner** =  Golf Digest
+
+**Link**: [https://www.golfdigest.com/content/dam/images/golfdigest/fullset/2020/03/16/5e6ff536e19847e9c2d0783a_solo-golfer-on-course.jpg](https://www.golfdigest.com/content/dam/images/golfdigest/fullset/2020/03/16/5e6ff536e19847e9c2d0783a_solo-golfer-on-course.jpg)
+
+
+### **Website Icons**
+
+[https://fontawesome.com](https://fontawesome.com/v5/search) was used to download all of the icons displayed within this project.
+
+### **Website Structure Layout**
+
+[https://startbootstrap.com](https://startbootstrap.com/previews/landing-page) was used to find a web layout theme and the link demonstrate the exact one followed.
+
+Code Institute's **Blog Project** was also taken into consideration when designing ideas such as the dropdown menu option and the **feedback** application within this project. 
+
+### **Button design**
+
+[https://codepen.io](https://codepen.io/annguyn/pen/xNVprL) provided with CSS button style code. 
+
+### **Stack Overflow**
+
+Fitting showcase images into their own div box so that it shrinks with screen size.
+
+[https://stackoverflow.com/questions/3029422/how-do-i-auto-resize-an-image-to-fit-a-div-container][https://stackoverflow.com/questions/3029422/how-do-i-auto-resize-an-image-to-fit-a-div-container]
+
+Also had to replace the css image urls with html img tages so stack overflow also helped to solve this issue.
+
+[https://stackoverflow.com/questions/35134845/two-relative-divs-overlap-each-other](https://stackoverflow.com/questions/35134845/two-relative-divs-overlap-each-other)
+
+#### **Slack Community**
+- Inspiration for hiding and displaying sections using JavaScript realised by talking to others in **#Portfolio 4** group chat.
+
+#### **YouTube**
+- This video web application also helped to learn about automated testing and how to implement it.
+
+**Youtube channel**: The Dumbfounds
+
+[https://www.youtube.com/watch?v=28zdhLPZ1Zk](https://www.youtube.com/watch?v=28zdhLPZ1Zk)
+
+#### **Code Institute Project 4 study material**
+
+**Agile module** was re watched to learn exactly how to use and implement several Agile tools.
+
+**Automated Testing module** was also very handy for this project as well as **Bootstrap** module.
+
+All **other** modules towards this project were also used to help create this project. 
+
+
+
+
