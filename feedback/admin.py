@@ -3,7 +3,7 @@ from django_summernote.admin import SummernoteModelAdmin
 from .models import Review, Comment
 
 
-# Register your models here.
+# In admin panel, review application settings are set here
 @admin.register(Review)
 class ReviewAdmin(SummernoteModelAdmin):
     """
@@ -17,6 +17,7 @@ class ReviewAdmin(SummernoteModelAdmin):
     summernote_fields = ('content')
 
 
+# In admin panel, comment model settings are set here
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     """

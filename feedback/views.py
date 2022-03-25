@@ -27,7 +27,12 @@ class ReviewInDetail(View):
     and comment section (review_page.html)
     """
     def get(self, request, slug):
-        """X"""
+        """
+        Get requested review based on slug and
+        set like dislike feature with an if statement
+        and find user using the feature by user id
+        Render review page with updated features data
+        """
         queryset = Review.objects.filter(status=1)
         review = get_object_or_404(queryset, slug=slug)
         comments = review.comments.filter(approved=True).order_by('created_on')

@@ -4,7 +4,8 @@
 {% load static %}
 
 {% if user.profile.first_name == "" %}
-
+<!-- testing empty profile by checking first_name field is blank
+(All fields must be filled if profile is updated) -->
 <h2 class="text-center mt-5 mb-5">You need to set up your profile before proceeding with a new booking</h2>
 <div class="text-center">
     <a class="text-decoration-none" href="{% url 'user_update_profile' %}">
@@ -12,6 +13,7 @@
     </a>
 </div>
 {% else %}
+<!-- else show booking image, title and details. -->
 <div class="booking-img">
     <div class="container">
         <div class="row g-0">
@@ -28,11 +30,12 @@
         </div>
     </div>
 </div>
+<!-- button to add new booking -->
 <div class="text-center">
     <a class="text-decoration-none btn btn-hover mx-auto" href="{% url 'add-booking' %}">New Booking</a>
 </div>
 <div class="container-fluid">
-    <!-- User Bookings List -->
+    <!-- User Bookings List and display structure for each present booking -->
     <div class="col-12 mt-3 left">
         <div class="row">
             {% for booking in bookings %}
@@ -56,7 +59,6 @@
                                 Club Hire: <strong>YES</strong>
                                 {% endif %}
                             </p>
-                            <!-- link to view each review in full and comment below -->
                             
                             <p class="card-text">Additional Requests: 
                                 <br>
@@ -64,16 +66,15 @@
                             </p> 
                             
                             <hr />
-                        
+                            <!-- button updates booking data specific to bookinn id requested -->
                             <a href="{% url 'edit-booking' booking.id %}" class="text-decoration-none">
                                 <button class="btn-primary booking-btn mb-3 mt-3 me-4">Update</button>
                             </a>
-                                
+                            <!-- calls delete_booking.html to prevent one click deletion -->
                             <a href="{% url 'delete-booking' booking.id %}" class="text-decoration-none">
                                 <button class="btn-danger mb-3 mt-3 ">Delete</button>
                             </a>
                             
-                            <!-- to display number of likes on each review -->
                             <p class="card-text text-muted h6">
                                 Created on: {{ booking.created_on}} |  By: {{ booking.last_name}}, {{ booking.first_name}}
                             </p>
@@ -90,6 +91,7 @@
     </div>
     
 </div>
+    <!-- Home button page to improve user interaction -->
     <div class="text-center">
         <a class="text-decoration-none btn btn-hover mx-auto" href="{% url 'home' %}">Home Page</a>
     </div>

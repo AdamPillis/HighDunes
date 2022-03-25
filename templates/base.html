@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Golf website to show the power of user interaction for any global golf course">
+    <meta name="keywords" content="play golf, golf, clubhire, buggies, halfway house, food, driving range, book tee time">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
@@ -25,7 +27,6 @@
             <a class="navbar-brand" href="{% url 'home' %}">High|Dunes <i class="fas fa-golf-ball m-auto"></i> Golf Club</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
                 aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarContent">
@@ -62,7 +63,8 @@
         </div>
     </nav>
     <!-- container in which alert messages will be displayed. 
-    Classes added to div and dismiss button are django's standard -->
+    Classes added to div and dismiss button are django's standard. 
+    function in static/js/script.js, disappears message after 3 seconds-->
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-8 offset-md-2">
