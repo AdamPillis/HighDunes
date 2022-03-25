@@ -643,13 +643,43 @@ Within DevTools, the lighthouse report is used to test overall performance of th
 
 Performance has been categorised and is the only element not above 90% given that some of the images take much longer to load given their size i.e. main landing image which is essential to be good quality and big to attract new site visitors.
 
-SCREENSHOT OF LIGHTHOUSE REPORT
+**Landing Page**
+
+![Light-house Report landing page](static/images/devtools-report-landing_page.html.png "Light-house Report landing page")
+
+**View Reviews Page**
+
+![Light-house Report reviews page](static/images/devtools-report-reviews_page.html.png "Light-house Report reviews page")
+
+**View Profile Page**
+
+![Light-house Report view profile page](static/images/devtools-report-view_profile.html.png "Light-house Report view profile page")
+
+**View Bookings**
+
+![Light-house Report view bookings page](static/images/devtools-report-view_bookings.html.png "Light-house Report view bookings page")
+
+**Delete Bookings**
+
+![Light-house Report delete booking page](static/images/devtools-report-delete_booking.html.png "Light-house Report delete booking page")
+
+**Register Page**
+
+![Light-house Report signup page](static/images/devtools-report-signup.html.png "Light-house Report signup page")
+
+**Log In Page**
+
+![Light-house Report login page](static/images/devtools-report-login.html.png "Light-house Report login page")
+
+**Logout Page**
+
+![Light-house Report logout page](static/images/devtools-report-logout.html.png "Light-house Report logout pagee")
 
 ### **Testing colour contrast**
 
 [Coolors.co/palette](https://coolors.co/palette/a08219-b08f1b-e8bd21-eece59-f4de90-a3d590-75c059-46ab21-36821b-265815) site was used to chose the color theme for the project as it provides a set of colors which work well together and the contrast perfect.
 
-SCREENSHOT OF COOLORS COLORS
+![Coolors color theme](static/images/coolors-color-theme.png "Coolors color theme")
 
 ### **Search Engine Testing**
 
@@ -663,35 +693,39 @@ Each section displayed as a page was tested and checked through *Mozilla Firefox
 
 **Landing Page**
 
-![Mozilla Firefox landing page](assets/images/mozilla-firefox-landing-page.PNG "Mozilla Firefox landing page")
+![Mozilla Firefox landing page]( "Mozilla Firefox landing page")
 
 **View Reviews Page**
 
-![Mozilla Firefox menu page](assets/images/mozilla-firefox-menu-page.PNG "Mozilla Firefox menu page")
+![Mozilla Firefox View Reviews page]( "Mozilla Firefox View Reviewsu page")
 
 **View Profile Page**
 
-![Mozilla Firefox rules page](assets/images/mozilla-firefox-rules-page.PNG "Mozilla Firefox rules page")
+![Mozilla Firefox View Profile page]( "Mozilla Firefox View Profile page")
 
 **View Bookings**
 
-![Mozilla Firefox game page](assets/images/mozilla-firefox-game-page.PNG "Mozilla Firefox game page")
+![Mozilla Firefox View Bookings page]( "Mozilla Firefox View Bookings page")
 
 **Delete Bookings**
 
-![Mozilla Firefox exit page](assets/images/mozilla-firefox-exit-page.PNG "Mozilla Firefox exit page")
+![Mozilla Firefox Delete Bookings page]( "Mozilla Firefox Delete Bookings page")
 
 **Register Page**
 
-![Mozilla Firefox end page](assets/images/mozilla-firefox-end-page.PNG "Mozilla Firefox end page")
+![Mozilla Firefox Register page]( "Mozilla Firefox Register page")
 
 **Log In Page**
 
-![Mozilla Firefox end page](assets/images/mozilla-firefox-end-page.PNG "Mozilla Firefox end page")
+![Mozilla Firefox Log In page]( "Mozilla Firefox Log In page")
 
 **Logout Page**
 
-![Mozilla Firefox end page](assets/images/mozilla-firefox-end-page.PNG "Mozilla Firefox end page")
+![Mozilla Firefox Logout page]( "Mozilla Firefox Logout page")
+
+**Admin Page**
+
+![Mozilla Firefox admin page]( "Mozilla Firefox admin page")
 
 3. **Microsoft Edge**
 
@@ -699,35 +733,39 @@ Each section displayed as a page was tested and checked through *Microsoft Edge*
 
 **Landing Page**
 
-![Microsoft Edge landing page](assets/images/microsoft-edge-landing-page.PNG "Microsoft Edge landing page")
+![Microsoft Edge landing page]( "Microsoft Edge landing page")
 
 **View Reviews Page**
 
-![Microsoft Edge menu page](assets/images/microsoft-edge-menu-page.PNG "Microsoft Edge menu page")
+![Microsoft Edge View Reviews page]( "Microsoft Edge View Reviews page")
 
 **View Profile Page**
 
-![Microsoft Edge rules page](assets/images/microsoft-edge-rules-page.PNG "Microsoft Edge rules page")
+![Microsoft Edge View Profile page]( "Microsoft Edge View Profile page")
 
 **View Bookings**
 
-![Microsoft Edge game page](assets/images/microsoft-edge-game-page.PNG "Microsoft Edge game page")
+![Microsoft Edge View Bookings page]( "Microsoft Edge View Bookings page")
 
 **Delete Bookings**
 
-![Microsoft Edge exit page](assets/images/microsoft-edge-exit-page.PNG "Microsoft Edge exit page")
+![Microsoft Edge Delete Bookings page]( "Microsoft Edge Delete Bookings page")
 
 **Register Page**
 
-![Microsoft Edge end page](assets/images/microsoft-edge-end-page.PNG "Microsoft Edge end page")
+![Microsoft Edge Register page]( "Microsoft Edge Register page")
 
 **Log In Page**
 
-![Microsoft Edge end page](assets/images/microsoft-edge-end-page.PNG "Microsoft Edge end page")
+![Microsoft Edge Log In page](a "Microsoft Edge Log In page")
 
 **Log Out Page**
 
-![Microsoft Edge end page](assets/images/microsoft-edge-end-page.PNG "Microsoft Edge end page")
+![Microsoft Edge Log Out page]( "Microsoft Edge Log Out page")
+
+**Admin Page**
+
+![Microsoft Edge Admin page]( "Microsoft Edge Admin page")
 
 ### **Application Features Test**
 
