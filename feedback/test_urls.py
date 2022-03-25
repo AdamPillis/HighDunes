@@ -5,7 +5,7 @@ from .views import ReviewList, ReviewInDetail, ReviewLike, ReviewDislike
 
 class TestReviewUrls(SimpleTestCase):
     """
-    Testing all urls set up within urls.py and 
+    Testing all urls set up within urls.py and
     making sure that the url path name matches
     the class based view function called
     """

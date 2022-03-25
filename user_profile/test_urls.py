@@ -1,6 +1,6 @@
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
-from .views import profile, update_profile 
+from .views import profile, update_profile
 
 
 class TestProfileUrls(SimpleTestCase):
