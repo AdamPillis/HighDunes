@@ -1007,35 +1007,38 @@ This website was also used to test the web features on all screen sizes.
 
 **Register Page**
 
-SCREENSHOT
+![Am I Respnsive register page](static/images/amiresponsive-register-page.png "Am I Respnsive register page")
 
 **Log In Page**
 
-SCREENSHOT
+![Am I Respnsive login page](static/images/amiresponsive-login-page.png "Am I Respnsive login page")
 
 **Log Out Page**
 
-SCREENSHOT
+This page is 100% responsive to all screen sizes and hass been tested on multiple devices. Unfortunately, unable to show "Am I Responsive" screenshot given that access to log in is denied through this responsiveness app so the developer can only display the urls which load on it. This url does not load unfortunately.
 
 **Landing Page**
-
-SCREENSHOT
+![Am I Respnsive landing page](static/images/amiresponsive-lading-page.png "Am I Respnsive landing page")
 
 **View Reviews Page**
 
-SCREENSHOT
+![Am I Respnsive reviews page](static/images/amiresponsive-review-page.png "Am I Respnsive reviews page")
 
 **View Profile Page**
 
-SCREENSHOT
+![Am I Respnsive profile page](static/images/amiresponsive-profile-page.png "Am I Respnsive profile page")
 
 **View Bookings**
 
-SCREENSHOT
+This page is 100% responsive to all screen sizes and hass been tested on multiple devices. Unfortunately, unable to show "Am I Responsive" screenshot given that access to log in is denied through this responsiveness app so the developer can only display the urls which load on it. This url does not load unfortunately.
+
+However, the add booking.html page url did.
+
+![Am I Respnsive add_booking page](static/images/amiresponsive-add_booking-page.png "Am I Respnsive add_booking page")
 
 **Delete Bookings**
 
-SCREENSHOT
+![Am I Respnsive delete booking page](static/images/amiresponsive-delete_booking-page.png "Am I Respnsive delete booking page")
 
 ### **Other ways of testing responsiveness and features**
 
