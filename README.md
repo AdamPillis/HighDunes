@@ -1022,6 +1022,7 @@ This website was also used to test the web features on all screen sizes.
 This page is 100% responsive to all screen sizes and hass been tested on multiple devices. Unfortunately, unable to show "Am I Responsive" screenshot given that access to log in is denied through this responsiveness app so the developer can only display the urls which load on it. This url does not load unfortunately.
 
 **Landing Page**
+
 ![Am I Respnsive landing page](static/images/amiresponsive-lading-page.png "Am I Respnsive landing page")
 
 **View Reviews Page**
